@@ -12,9 +12,9 @@ https://nezruceuil.itch.io/cool-board-games
 - Control/Option Space to only see the background
 
 ### Info ℹ️:
-- The Bots only work with Chess and Castle War.
-- Your progress is Saved!
-- The Bots are the Only thing in this project that is coded by AI.
+- The Bots only work with Chess and Castle War. ⚙️
+- Your progress is Saved! ✅
+- The Bots are the Only thing in this project that is coded by AI. 🤖
 
 #### Castle War rules 🏰:
 
