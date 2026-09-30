@@ -1,0 +1,603 @@
+[gd_scene format=3 uid="uid://ogs34871awrq"]
+
+[ext_resource type="Script" uid="uid://beajvlcfkqq2q" path="res://game/scripts/hazelnut_fight.gd" id="1_7m7p1"]
+[ext_resource type="Texture2D" uid="uid://duxckxv3pqml" path="res://assets/bg.png" id="2_wwyqt"]
+[ext_resource type="Texture2D" uid="uid://bqilupm1kth6q" path="res://assets/Ecu_marron.png" id="2_y6bsk"]
+[ext_resource type="Texture2D" uid="uid://d1dq2e4xy3583" path="res://assets/Ecu_gris.png" id="3_v7qes"]
+[ext_resource type="Texture2D" uid="uid://daff1gm4avm08" path="res://assets/Ecu_blanc.png" id="4_voygy"]
+[ext_resource type="Texture2D" uid="uid://bm3eewpat2h0c" path="res://assets/Ecu_orange.png" id="5_q7x03"]
+[ext_resource type="Texture2D" uid="uid://du6qoarcbcvqo" path="res://assets/Noisette_m.png" id="6_wwyqt"]
+[ext_resource type="Texture2D" uid="uid://hujpyjn8ex2m" path="res://assets/Noisette_d.png" id="7_5w70a"]
+[ext_resource type="FontFile" uid="uid://uu4wfq7ugnnn" path="res://assets/font/GROBOLD.ttf" id="9_5w70a"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3atux"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0.80899847, 0.8089982, 0.8089979, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5w70a"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ch24r"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1iiqi"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_28mff"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fl6m5"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l6hlj"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_okaq3"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ygfmn"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_w3d16"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0.15127608, 0.15127608, 0.15127608, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[node name="hazelnut fight" type="Control" unique_id=780609487]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_7m7p1")
+
+[node name="player" type="Panel" parent="." unique_id=1661907031]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_3atux")
+
+[node name="1_1" type="Sprite2D" parent="." unique_id=2009435179]
+modulate = Color(0.8431842, 0.84318376, 0.84318376, 1)
+position = Vector2(326, 74)
+scale = Vector2(0.21186438, 0.21186441)
+texture = ExtResource("2_wwyqt")
+region_enabled = true
+region_rect = Rect2(0, 0, 472, 472)
+
+[node name="2_1" type="Sprite2D" parent="." unique_id=465432446]
+modulate = Color(0.8431842, 0.84318376, 0.84318376, 1)
+position = Vector2(426.5, 74)
+scale = Vector2(0.20974588, 0.2118644)
+texture = ExtResource("2_wwyqt")
+region_enabled = true
+region_rect = Rect2(0, 0, 472, 472)
+
+[node name="3_1" type="Sprite2D" parent="." unique_id=243265324]
+modulate = Color(0.8431842, 0.84318376, 0.84318376, 1)
+position = Vector2(526.5, 74)
+scale = Vector2(0.2097458, 0.2118644)
+texture = ExtResource("2_wwyqt")
+region_enabled = true
+region_rect = Rect2(0, 0, 472, 472)
+
+[node name="4_1" type="Sprite2D" parent="." unique_id=837364148]
+modulate = Color(0.8431842, 0.84318376, 0.84318376, 1)
+position = Vector2(626.5, 74)
+scale = Vector2(0.20974575, 0.2118644)
+texture = ExtResource("2_wwyqt")
+region_enabled = true
+region_rect = Rect2(0, 0, 472, 472)
+
+[node name="5_1" type="Sprite2D" parent="." unique_id=1818250969]
+modulate = Color(0.8431842, 0.84318376, 0.84318376, 1)
+position = Vector2(726.5, 74)
+scale = Vector2(0.20974584, 0.21186443)
+texture = ExtResource("2_wwyqt")
+region_enabled = true
+region_rect = Rect2(0, 0, 472, 472)
+
+[node name="6_1" type="Sprite2D" parent="." unique_id=818547043]
+modulate = Color(0.8431842, 0.84318376, 0.84318376, 1)
+position = Vector2(826.5, 74)
+scale = Vector2(0.20974566, 0.2118644)
+texture = ExtResource("2_wwyqt")
+region_enabled = true
+region_rect = Rect2(0, 0, 472, 472)
+
+[node name="1_2" type="Sprite2D" parent="." unique_id=1350445023]
+modulate = Color(0.8431842, 0.84318376, 0.84318376, 1)
+position = Vector2(326, 174.5)
+scale = Vector2(0.21186438, 0.20974569)
+texture = ExtResource("2_wwyqt")
+region_enabled = true
+region_rect = Rect2(0, 0, 472, 472)
+
+[node name="2_2" type="Sprite2D" parent="." unique_id=377141081]
+modulate = Color(0.8431842, 0.84318376, 0.84318376, 1)
+position = Vector2(426.5, 174.5)
+scale = Vector2(0.20974588, 0.20974572)
+texture = ExtResource("2_wwyqt")
+region_enabled = true
+region_rect = Rect2(0, 0, 472, 472)
+
+[node name="3_2" type="Sprite2D" parent="." unique_id=1507824660]
+modulate = Color(0.8431842, 0.84318376, 0.84318376, 1)
+position = Vector2(526.5, 174.5)
+scale = Vector2(0.2097458, 0.20974572)
+texture = ExtResource("2_wwyqt")
+region_enabled = true
+region_rect = Rect2(0, 0, 472, 472)
+
+[node name="4_2" type="Sprite2D" parent="." unique_id=598197573]
+modulate = Color(0.8431842, 0.84318376, 0.84318376, 1)
+position = Vector2(626.5, 174.5)
+scale = Vector2(0.20974575, 0.20974572)
+texture = ExtResource("2_wwyqt")
+region_enabled = true
+region_rect = Rect2(0, 0, 472, 472)
+
+[node name="5_2" type="Sprite2D" parent="." unique_id=29137982]
+modulate = Color(0.8431842, 0.84318376, 0.84318376, 1)
+position = Vector2(726.5, 174.5)
+scale = Vector2(0.20974584, 0.20974572)
+texture = ExtResource("2_wwyqt")
+region_enabled = true
+region_rect = Rect2(0, 0, 472, 472)
+
+[node name="6_2" type="Sprite2D" parent="." unique_id=424848725]
+modulate = Color(0.8431842, 0.84318376, 0.84318376, 1)
+position = Vector2(826.5, 174.5)
+scale = Vector2(0.20974566, 0.20974573)
+texture = ExtResource("2_wwyqt")
+region_enabled = true
+region_rect = Rect2(0, 0, 472, 472)
+
+[node name="1_3" type="Sprite2D" parent="." unique_id=1972349266]
+modulate = Color(0.8431842, 0.84318376, 0.84318376, 1)
+position = Vector2(326, 274.5)
+scale = Vector2(0.21186438, 0.20974569)
+texture = ExtResource("2_wwyqt")
+region_enabled = true
+region_rect = Rect2(0, 0, 472, 472)
+
+[node name="2_3" type="Sprite2D" parent="." unique_id=1320532254]
+modulate = Color(0.8431842, 0.84318376, 0.84318376, 1)
+position = Vector2(426.5, 274.5)
+scale = Vector2(0.20974588, 0.20974572)
+texture = ExtResource("2_wwyqt")
+region_enabled = true
+region_rect = Rect2(0, 0, 472, 472)
+
+[node name="3_3" type="Sprite2D" parent="." unique_id=1958116951]
+modulate = Color(0.8431842, 0.84318376, 0.84318376, 1)
+position = Vector2(526.5, 274.5)
+scale = Vector2(0.2097458, 0.20974572)
+texture = ExtResource("2_wwyqt")
+region_enabled = true
+region_rect = Rect2(0, 0, 472, 472)
+
+[node name="4_3" type="Sprite2D" parent="." unique_id=1173892869]
+modulate = Color(0.8431842, 0.84318376, 0.84318376, 1)
+position = Vector2(626.5, 274.5)
+scale = Vector2(0.20974575, 0.20974572)
+texture = ExtResource("2_wwyqt")
+region_enabled = true
+region_rect = Rect2(0, 0, 472, 472)
+
+[node name="5_3" type="Sprite2D" parent="." unique_id=1116352563]
+modulate = Color(0.8431842, 0.84318376, 0.84318376, 1)
+position = Vector2(726.5, 274.5)
+scale = Vector2(0.20974584, 0.20974572)
+texture = ExtResource("2_wwyqt")
+region_enabled = true
+region_rect = Rect2(0, 0, 472, 472)
+
+[node name="6_3" type="Sprite2D" parent="." unique_id=690194612]
+modulate = Color(0.8431842, 0.84318376, 0.84318376, 1)
+position = Vector2(826.5, 274.5)
+scale = Vector2(0.20974566, 0.20974573)
+texture = ExtResource("2_wwyqt")
+region_enabled = true
+region_rect = Rect2(0, 0, 472, 472)
+
+[node name="1_4" type="Sprite2D" parent="." unique_id=1500705981]
+modulate = Color(0.8431842, 0.84318376, 0.84318376, 1)
+position = Vector2(326, 374.5)
+scale = Vector2(0.21186438, 0.20974584)
+texture = ExtResource("2_wwyqt")
+region_enabled = true
+region_rect = Rect2(0, 0, 472, 472)
+
+[node name="2_4" type="Sprite2D" parent="." unique_id=1860611775]
+modulate = Color(0.8431842, 0.84318376, 0.84318376, 1)
+position = Vector2(426.5, 374.5)
+scale = Vector2(0.20974588, 0.20974582)
+texture = ExtResource("2_wwyqt")
+region_enabled = true
+region_rect = Rect2(0, 0, 472, 472)
+
+[node name="3_4" type="Sprite2D" parent="." unique_id=1020252365]
+modulate = Color(0.8431842, 0.84318376, 0.84318376, 1)
+position = Vector2(526.5, 374.5)
+scale = Vector2(0.2097458, 0.20974582)
+texture = ExtResource("2_wwyqt")
+region_enabled = true
+region_rect = Rect2(0, 0, 472, 472)
+
+[node name="4_4" type="Sprite2D" parent="." unique_id=383237942]
+modulate = Color(0.8431842, 0.84318376, 0.84318376, 1)
+position = Vector2(626.5, 374.5)
+scale = Vector2(0.20974575, 0.20974582)
+texture = ExtResource("2_wwyqt")
+region_enabled = true
+region_rect = Rect2(0, 0, 472, 472)
+
+[node name="5_4" type="Sprite2D" parent="." unique_id=271503760]
+modulate = Color(0.8431842, 0.84318376, 0.84318376, 1)
+position = Vector2(726.5, 374.5)
+scale = Vector2(0.20974584, 0.20974585)
+texture = ExtResource("2_wwyqt")
+region_enabled = true
+region_rect = Rect2(0, 0, 472, 472)
+
+[node name="6_4" type="Sprite2D" parent="." unique_id=404378714]
+modulate = Color(0.8431842, 0.84318376, 0.84318376, 1)
+position = Vector2(826.5, 374.5)
+scale = Vector2(0.20974566, 0.20974576)
+texture = ExtResource("2_wwyqt")
+region_enabled = true
+region_rect = Rect2(0, 0, 472, 472)
+
+[node name="1_5" type="Sprite2D" parent="." unique_id=132093211]
+modulate = Color(0.8431842, 0.84318376, 0.84318376, 1)
+position = Vector2(326, 474.5)
+scale = Vector2(0.21186438, 0.20974569)
+texture = ExtResource("2_wwyqt")
+region_enabled = true
+region_rect = Rect2(0, 0, 472, 472)
+
+[node name="2_5" type="Sprite2D" parent="." unique_id=670117223]
+modulate = Color(0.8431842, 0.84318376, 0.84318376, 1)
+position = Vector2(426.5, 474.50003)
+scale = Vector2(0.20974588, 0.20974572)
+texture = ExtResource("2_wwyqt")
+region_enabled = true
+region_rect = Rect2(0, 0, 472, 472)
+
+[node name="3_5" type="Sprite2D" parent="." unique_id=2112962464]
+modulate = Color(0.8431842, 0.84318376, 0.84318376, 1)
+position = Vector2(526.5, 474.50003)
+scale = Vector2(0.2097458, 0.20974572)
+texture = ExtResource("2_wwyqt")
+region_enabled = true
+region_rect = Rect2(0, 0, 472, 472)
+
+[node name="4_5" type="Sprite2D" parent="." unique_id=1976310110]
+modulate = Color(0.8431842, 0.84318376, 0.84318376, 1)
+position = Vector2(626.5, 474.50003)
+scale = Vector2(0.20974575, 0.20974572)
+texture = ExtResource("2_wwyqt")
+region_enabled = true
+region_rect = Rect2(0, 0, 472, 472)
+
+[node name="5_5" type="Sprite2D" parent="." unique_id=668320597]
+modulate = Color(0.8431842, 0.84318376, 0.84318376, 1)
+position = Vector2(726.5, 474.50006)
+scale = Vector2(0.20974584, 0.20974572)
+texture = ExtResource("2_wwyqt")
+region_enabled = true
+region_rect = Rect2(0, 0, 472, 472)
+
+[node name="6_5" type="Sprite2D" parent="." unique_id=1130844900]
+modulate = Color(0.8431842, 0.84318376, 0.84318376, 1)
+position = Vector2(826.5, 474.50006)
+scale = Vector2(0.20974566, 0.20974573)
+texture = ExtResource("2_wwyqt")
+region_enabled = true
+region_rect = Rect2(0, 0, 472, 472)
+
+[node name="1_6" type="Sprite2D" parent="." unique_id=2317557]
+modulate = Color(0.8431842, 0.84318376, 0.84318376, 1)
+position = Vector2(326, 574.5)
+scale = Vector2(0.21186438, 0.20974569)
+texture = ExtResource("2_wwyqt")
+region_enabled = true
+region_rect = Rect2(0, 0, 472, 472)
+
+[node name="2_6" type="Sprite2D" parent="." unique_id=1613955074]
+modulate = Color(0.8431842, 0.84318376, 0.84318376, 1)
+position = Vector2(426.5, 574.5)
+scale = Vector2(0.20974588, 0.20974572)
+texture = ExtResource("2_wwyqt")
+region_enabled = true
+region_rect = Rect2(0, 0, 472, 472)
+
+[node name="3_6" type="Sprite2D" parent="." unique_id=1432740005]
+modulate = Color(0.8431842, 0.84318376, 0.84318376, 1)
+position = Vector2(526.5, 574.5)
+scale = Vector2(0.2097458, 0.20974572)
+texture = ExtResource("2_wwyqt")
+region_enabled = true
+region_rect = Rect2(0, 0, 472, 472)
+
+[node name="4_6" type="Sprite2D" parent="." unique_id=1699299448]
+modulate = Color(0.8431842, 0.84318376, 0.84318376, 1)
+position = Vector2(626.5, 574.5)
+scale = Vector2(0.20974575, 0.20974572)
+texture = ExtResource("2_wwyqt")
+region_enabled = true
+region_rect = Rect2(0, 0, 472, 472)
+
+[node name="5_6" type="Sprite2D" parent="." unique_id=1838107816]
+modulate = Color(0.8431842, 0.84318376, 0.84318376, 1)
+position = Vector2(726.5, 574.50006)
+scale = Vector2(0.20974584, 0.20974572)
+texture = ExtResource("2_wwyqt")
+region_enabled = true
+region_rect = Rect2(0, 0, 472, 472)
+
+[node name="6_6" type="Sprite2D" parent="." unique_id=1041761495]
+modulate = Color(0.8431842, 0.84318376, 0.84318376, 1)
+position = Vector2(826.5, 574.50006)
+scale = Vector2(0.20974566, 0.20974573)
+texture = ExtResource("2_wwyqt")
+region_enabled = true
+region_rect = Rect2(0, 0, 472, 472)
+
+[node name="next" type="Button" parent="." unique_id=410932372]
+layout_mode = 0
+offset_left = 947.0
+offset_top = 589.0
+offset_right = 1146.0
+offset_bottom = 642.0
+focus_mode = 1
+theme_override_font_sizes/font_size = 32
+text = "Next Player"
+
+[node name="next2" type="Button" parent="." unique_id=1722573765]
+visible = false
+z_index = 1
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+focus_mode = 1
+theme_override_font_sizes/font_size = 128
+theme_override_styles/normal = SubResource("StyleBoxFlat_5w70a")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxFlat_ch24r")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_1iiqi")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_28mff")
+theme_override_styles/hover = SubResource("StyleBoxFlat_fl6m5")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxFlat_l6hlj")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_okaq3")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxFlat_ygfmn")
+text = "Next player"
+
+[node name="player1" type="Sprite2D" parent="." unique_id=565028158]
+z_as_relative = false
+position = Vector2(827.99994, 574.99994)
+scale = Vector2(0.29, 0.29)
+texture = ExtResource("2_y6bsk")
+flip_h = true
+
+[node name="player2" type="Sprite2D" parent="." unique_id=349908892]
+z_as_relative = false
+position = Vector2(326, 75)
+scale = Vector2(0.29, 0.29)
+texture = ExtResource("3_v7qes")
+
+[node name="player3" type="Sprite2D" parent="." unique_id=1276460004]
+z_as_relative = false
+position = Vector2(326, 575)
+scale = Vector2(0.29, 0.29)
+texture = ExtResource("4_voygy")
+flip_h = true
+
+[node name="player4" type="Sprite2D" parent="." unique_id=877448884]
+z_as_relative = false
+position = Vector2(828, 75)
+scale = Vector2(0.29, 0.29)
+texture = ExtResource("5_q7x03")
+
+[node name="actions" type="Node2D" parent="." unique_id=556118603]
+
+[node name="look around" type="Button" parent="actions" unique_id=1189127675]
+offset_left = 30.0
+offset_top = 41.0
+offset_right = 225.0
+offset_bottom = 94.0
+focus_mode = 1
+theme_override_font_sizes/font_size = 32
+text = "look around"
+
+[node name="Hide 1" type="Button" parent="actions" unique_id=795850237]
+offset_left = 5.0
+offset_top = 119.0
+offset_right = 254.0
+offset_bottom = 172.0
+focus_mode = 1
+theme_override_font_sizes/font_size = 32
+text = "Hide 1 hazelnut"
+
+[node name="Hide 2" type="Button" parent="actions" unique_id=308881630]
+offset_left = 5.0
+offset_top = 214.0
+offset_right = 270.0
+offset_bottom = 267.0
+focus_mode = 1
+theme_override_font_sizes/font_size = 32
+text = "Hide 2 hazelnuts"
+
+[node name="Hide 3" type="Button" parent="actions" unique_id=1454142681]
+offset_left = 5.0
+offset_top = 311.0
+offset_right = 270.0
+offset_bottom = 364.0
+focus_mode = 1
+theme_override_font_sizes/font_size = 32
+text = "Hide 3 hazelnuts"
+
+[node name="Hide 4" type="Button" parent="actions" unique_id=456916570]
+offset_left = 5.0
+offset_top = 405.0
+offset_right = 270.0
+offset_bottom = 458.0
+focus_mode = 1
+theme_override_font_sizes/font_size = 32
+text = "Hide 4 hazelnuts"
+
+[node name="Hide 5" type="Button" parent="actions" unique_id=1895552918]
+offset_left = 5.0
+offset_top = 496.0
+offset_right = 270.0
+offset_bottom = 549.0
+focus_mode = 1
+theme_override_font_sizes/font_size = 32
+text = "Hide 5 hazelnuts"
+
+[node name="Hide 6" type="Button" parent="actions" unique_id=704627080]
+offset_left = 5.0
+offset_top = 580.0
+offset_right = 270.0
+offset_bottom = 633.0
+focus_mode = 1
+theme_override_font_sizes/font_size = 32
+text = "Hide the golden"
+
+[node name="Hazelnut count" type="Node2D" parent="." unique_id=958386398]
+
+[node name="1" type="Sprite2D" parent="Hazelnut count" unique_id=1789802597]
+position = Vector2(947, 101)
+texture = ExtResource("6_wwyqt")
+
+[node name="2" type="Sprite2D" parent="Hazelnut count" unique_id=2094264909]
+position = Vector2(1081, 100)
+texture = ExtResource("6_wwyqt")
+
+[node name="3" type="Sprite2D" parent="Hazelnut count" unique_id=1388242269]
+position = Vector2(947, 236)
+texture = ExtResource("6_wwyqt")
+
+[node name="4" type="Sprite2D" parent="Hazelnut count" unique_id=68136467]
+position = Vector2(1081, 235)
+texture = ExtResource("6_wwyqt")
+
+[node name="5" type="Sprite2D" parent="Hazelnut count" unique_id=967185426]
+position = Vector2(948, 372)
+texture = ExtResource("6_wwyqt")
+
+[node name="6" type="Sprite2D" parent="Hazelnut count" unique_id=1086489388]
+position = Vector2(1014, 506)
+texture = ExtResource("7_5w70a")
+
+[node name="turn" type="Label" parent="." unique_id=567538431]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 3.0
+offset_right = 140.0
+offset_bottom = 48.0
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 32
+text = "TURN: 0/10"
+
+[node name="PlayerTurn" type="Label" parent="." unique_id=1395496586]
+z_index = 1
+layout_mode = 0
+offset_left = 947.0
+offset_top = 6.0
+offset_right = 1146.0
+offset_bottom = 51.0
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("9_5w70a")
+theme_override_font_sizes/font_size = 32
+text = "Player 1 turn"
+
+[node name="win" type="Panel" parent="." unique_id=930065805]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="win2" type="Panel" parent="win" unique_id=993571345]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 253.0
+offset_top = 124.0
+offset_right = -249.0
+offset_bottom = -120.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_w3d16")
+
+[node name="Label" type="Label" parent="win/win2" unique_id=1301660279]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 6.0
+offset_right = 639.0
+offset_bottom = 94.0
+theme_override_font_sizes/font_size = 64
+text = "P1 WON !!!"
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="win/win2" unique_id=792796691]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 343.0
+offset_right = 640.0
+offset_bottom = 388.0
+theme_override_font_sizes/font_size = 32
+text = "with 0 hazelnuts"
+horizontal_alignment = 1
+
+[node name="1" type="Sprite2D" parent="win/win2" unique_id=822521366]
+visible = false
+position = Vector2(322, 214)
+scale = Vector2(0.7095648, 0.7095648)
+texture = ExtResource("2_y6bsk")
+
+[node name="2" type="Sprite2D" parent="win/win2" unique_id=1694741890]
+visible = false
+position = Vector2(322, 214)
+scale = Vector2(0.7095648, 0.7095648)
+texture = ExtResource("3_v7qes")
+
+[node name="3" type="Sprite2D" parent="win/win2" unique_id=126554078]
+visible = false
+position = Vector2(322, 214)
+scale = Vector2(0.7095648, 0.7095648)
+texture = ExtResource("5_q7x03")
+
+[node name="4" type="Sprite2D" parent="win/win2" unique_id=1211565800]
+visible = false
+position = Vector2(322, 214)
+scale = Vector2(0.7095648, 0.7095648)
+texture = ExtResource("5_q7x03")
+
+[connection signal="pressed" from="next" to="." method="_on_next_pressed"]
+[connection signal="pressed" from="next2" to="." method="_on_next_2_pressed"]
+[connection signal="pressed" from="actions/look around" to="." method="_on_look_around_pressed"]
+[connection signal="pressed" from="actions/Hide 1" to="." method="_on_hide_1_pressed"]
+[connection signal="pressed" from="actions/Hide 2" to="." method="_on_hide_2_pressed"]
+[connection signal="pressed" from="actions/Hide 3" to="." method="_on_hide_3_pressed"]
+[connection signal="pressed" from="actions/Hide 4" to="." method="_on_hide_4_pressed"]
+[connection signal="pressed" from="actions/Hide 5" to="." method="_on_hide_5_pressed"]
+[connection signal="pressed" from="actions/Hide 6" to="." method="_on_hide_6_pressed"]

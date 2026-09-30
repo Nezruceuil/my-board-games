@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://y84bw3qsbxxw"]
+
+[ext_resource type="Texture2D" uid="uid://c45jtfg4qx7wt" path="res://assets/chess/black_pizza.png" id="1_bn5l5"]
+
+[node name="chess_texture" type="Sprite2D" unique_id=850066069]
+physics_interpolation_mode = 2
+scale = Vector2(3.5, 3.5)
+texture = ExtResource("1_bn5l5")

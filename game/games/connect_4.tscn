@@ -1,0 +1,147 @@
+[gd_scene format=3 uid="uid://b2j80pqlwco8v"]
+
+[ext_resource type="Script" uid="uid://bh8xsi3u6gefr" path="res://game/scripts/connect_4.gd" id="1_s150v"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lf5dk"]
+bg_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_s150v"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cktrs"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_s150v"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yefqd"]
+bg_color = Color(0.39118534, 0.39118537, 0.39118525, 0.39215687)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xwqwh"]
+bg_color = Color(0, 0, 0, 0.39215687)
+
+[node name="Connect 4" type="Control" unique_id=735120534]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_s150v")
+
+[node name="Panel" type="Panel" parent="." unique_id=1071954355]
+modulate = Color(0.541, 0, 0, 1)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -6.0
+offset_top = 1.0
+offset_right = -6.0
+offset_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_lf5dk")
+
+[node name="Panel2" type="Panel" parent="." unique_id=801222714]
+layout_mode = 0
+offset_left = 230.4
+offset_top = 80.0
+offset_right = 930.4
+offset_bottom = 580.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_s150v")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel2" unique_id=1620526695]
+layout_mode = 1
+offset_right = 700.0
+offset_bottom = 500.0
+theme_override_constants/separation = 0
+
+[node name="1" type="Button" parent="Panel2/HBoxContainer" unique_id=1516150912]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_cktrs")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_s150v")
+theme_override_styles/hover = SubResource("StyleBoxFlat_yefqd")
+
+[node name="2" type="Button" parent="Panel2/HBoxContainer" unique_id=101394839]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_cktrs")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_s150v")
+theme_override_styles/hover = SubResource("StyleBoxFlat_yefqd")
+
+[node name="3" type="Button" parent="Panel2/HBoxContainer" unique_id=923408419]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_cktrs")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_s150v")
+theme_override_styles/hover = SubResource("StyleBoxFlat_yefqd")
+
+[node name="4" type="Button" parent="Panel2/HBoxContainer" unique_id=1031578996]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_cktrs")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_s150v")
+theme_override_styles/hover = SubResource("StyleBoxFlat_yefqd")
+
+[node name="5" type="Button" parent="Panel2/HBoxContainer" unique_id=2011997897]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_cktrs")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_s150v")
+theme_override_styles/hover = SubResource("StyleBoxFlat_yefqd")
+
+[node name="6" type="Button" parent="Panel2/HBoxContainer" unique_id=115606486]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_cktrs")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_s150v")
+theme_override_styles/hover = SubResource("StyleBoxFlat_yefqd")
+
+[node name="7" type="Button" parent="Panel2/HBoxContainer" unique_id=374406164]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_cktrs")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_s150v")
+theme_override_styles/hover = SubResource("StyleBoxFlat_yefqd")
+
+[node name="coins" type="Node2D" parent="." unique_id=1338765504]
+position = Vector2(280, 130)
+
+[node name="Win" type="Panel" parent="." unique_id=1486501816]
+visible = false
+layout_mode = 0
+offset_left = 230.4
+offset_top = 80.0
+offset_right = 930.4
+offset_bottom = 580.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_xwqwh")
+
+[node name="Label" type="Label" parent="Win" unique_id=801106253]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 23.0
+grow_horizontal = 2
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 64
+text = "BLUE WIN !!!"
+horizontal_alignment = 1
+
+[node name="Timer" type="Label" parent="." unique_id=973329082]
+layout_mode = 1
+offset_left = 4.0
+offset_right = 235.0
+offset_bottom = 45.0
+theme_override_font_sizes/font_size = 32
+
+[connection signal="pressed" from="Panel2/HBoxContainer/1" to="." method="_on_a_pressed"]
+[connection signal="pressed" from="Panel2/HBoxContainer/2" to="." method="_on_b_pressed"]
+[connection signal="pressed" from="Panel2/HBoxContainer/3" to="." method="_on_c_pressed"]
+[connection signal="pressed" from="Panel2/HBoxContainer/4" to="." method="_on_d_pressed"]
+[connection signal="pressed" from="Panel2/HBoxContainer/5" to="." method="_on_e_pressed"]
+[connection signal="pressed" from="Panel2/HBoxContainer/6" to="." method="_on_f_pressed"]
+[connection signal="pressed" from="Panel2/HBoxContainer/7" to="." method="_on_g_pressed"]

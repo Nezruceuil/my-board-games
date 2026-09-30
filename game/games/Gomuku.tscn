@@ -1,0 +1,2118 @@
+[gd_scene format=3 uid="uid://c7x4w3se8767q"]
+
+[ext_resource type="Script" uid="uid://t2rsj475ph2d" path="res://game/scripts/Gomuku.gd" id="1_sfnlk"]
+[ext_resource type="FontFile" uid="uid://uu4wfq7ugnnn" path="res://assets/font/GROBOLD.ttf" id="2_yqtgn"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1d5oi"]
+bg_color = Color(0.5132329, 0.5132329, 0.5132329, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a1c6o"]
+bg_color = Color(0.46034718, 0.46034718, 0.46034712, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sfnlk"]
+bg_color = Color(0.37225145, 0.3722512, 0.37225136, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_q6ivq"]
+bg_color = Color(0, 0, 0, 0.39215687)
+
+[node name="Gomoku" type="Control" unique_id=1897895668]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_sfnlk")
+
+[node name="Panel" type="Panel" parent="." unique_id=1741706406]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_1d5oi")
+
+[node name="GridContainer" type="GridContainer" parent="." unique_id=592023437]
+layout_mode = 0
+offset_left = 314.0
+offset_top = 33.0
+offset_right = 914.0
+offset_bottom = 633.0
+theme_override_constants/h_separation = 2
+theme_override_constants/v_separation = 2
+columns = 15
+
+[node name="01" type="Button" parent="GridContainer" unique_id=745592975 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="02" type="Button" parent="GridContainer" unique_id=1997757459 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="03" type="Button" parent="GridContainer" unique_id=1713043546 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="04" type="Button" parent="GridContainer" unique_id=186486046 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="05" type="Button" parent="GridContainer" unique_id=1090181267 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="06" type="Button" parent="GridContainer" unique_id=859434084 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="07" type="Button" parent="GridContainer" unique_id=1285556826 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="08" type="Button" parent="GridContainer" unique_id=2103239574 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="09" type="Button" parent="GridContainer" unique_id=116533517 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="10" type="Button" parent="GridContainer" unique_id=500402227 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="11" type="Button" parent="GridContainer" unique_id=1228849608 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="12" type="Button" parent="GridContainer" unique_id=2032605126 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="13" type="Button" parent="GridContainer" unique_id=1661513228 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="14" type="Button" parent="GridContainer" unique_id=2000441614 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="15" type="Button" parent="GridContainer" unique_id=2099154028 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="16" type="Button" parent="GridContainer" unique_id=1026392320 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="17" type="Button" parent="GridContainer" unique_id=1792545593 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="18" type="Button" parent="GridContainer" unique_id=934415957 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="19" type="Button" parent="GridContainer" unique_id=191876459 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="20" type="Button" parent="GridContainer" unique_id=1091413679 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="21" type="Button" parent="GridContainer" unique_id=735239257 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="22" type="Button" parent="GridContainer" unique_id=575180165 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="23" type="Button" parent="GridContainer" unique_id=75109099 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="24" type="Button" parent="GridContainer" unique_id=1585574197 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="25" type="Button" parent="GridContainer" unique_id=1798350272 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="26" type="Button" parent="GridContainer" unique_id=1490481079 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="27" type="Button" parent="GridContainer" unique_id=101252673 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="28" type="Button" parent="GridContainer" unique_id=1916481523 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="29" type="Button" parent="GridContainer" unique_id=1459777318 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="30" type="Button" parent="GridContainer" unique_id=1590718265 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="31" type="Button" parent="GridContainer" unique_id=226239689 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="32" type="Button" parent="GridContainer" unique_id=823569911 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="33" type="Button" parent="GridContainer" unique_id=1159479186 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="34" type="Button" parent="GridContainer" unique_id=152907386 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="35" type="Button" parent="GridContainer" unique_id=1619029016 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="36" type="Button" parent="GridContainer" unique_id=1591985051 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="37" type="Button" parent="GridContainer" unique_id=1472737712 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="38" type="Button" parent="GridContainer" unique_id=1658361125 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="39" type="Button" parent="GridContainer" unique_id=2100680753 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="40" type="Button" parent="GridContainer" unique_id=835900829 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="41" type="Button" parent="GridContainer" unique_id=1885041548 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="42" type="Button" parent="GridContainer" unique_id=214454726 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="43" type="Button" parent="GridContainer" unique_id=1515822162 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="44" type="Button" parent="GridContainer" unique_id=68409085 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="45" type="Button" parent="GridContainer" unique_id=276181987 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="46" type="Button" parent="GridContainer" unique_id=2126172879 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="47" type="Button" parent="GridContainer" unique_id=1451378282 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="48" type="Button" parent="GridContainer" unique_id=518920711 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="49" type="Button" parent="GridContainer" unique_id=281821598 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="50" type="Button" parent="GridContainer" unique_id=673245911 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="51" type="Button" parent="GridContainer" unique_id=1258493245 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="52" type="Button" parent="GridContainer" unique_id=217524192 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="53" type="Button" parent="GridContainer" unique_id=176684524 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="54" type="Button" parent="GridContainer" unique_id=1076001513 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="55" type="Button" parent="GridContainer" unique_id=1881840782 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="56" type="Button" parent="GridContainer" unique_id=632280389 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="57" type="Button" parent="GridContainer" unique_id=305210451 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="58" type="Button" parent="GridContainer" unique_id=976346715 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="59" type="Button" parent="GridContainer" unique_id=843966738 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="60" type="Button" parent="GridContainer" unique_id=889595183 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="61" type="Button" parent="GridContainer" unique_id=201019189 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="62" type="Button" parent="GridContainer" unique_id=985023055 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="63" type="Button" parent="GridContainer" unique_id=1222339837 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="64" type="Button" parent="GridContainer" unique_id=1577839926 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="65" type="Button" parent="GridContainer" unique_id=1124089322 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="66" type="Button" parent="GridContainer" unique_id=1261301372 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="67" type="Button" parent="GridContainer" unique_id=1263333372 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="68" type="Button" parent="GridContainer" unique_id=893224117 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="69" type="Button" parent="GridContainer" unique_id=1116897060 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="70" type="Button" parent="GridContainer" unique_id=1989945241 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="71" type="Button" parent="GridContainer" unique_id=285917151 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="72" type="Button" parent="GridContainer" unique_id=196598029 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="73" type="Button" parent="GridContainer" unique_id=2060793535 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="74" type="Button" parent="GridContainer" unique_id=37272177 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="75" type="Button" parent="GridContainer" unique_id=406734194 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="76" type="Button" parent="GridContainer" unique_id=1857445557 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="77" type="Button" parent="GridContainer" unique_id=1357623876 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="78" type="Button" parent="GridContainer" unique_id=1462428464 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="79" type="Button" parent="GridContainer" unique_id=1058262332 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="80" type="Button" parent="GridContainer" unique_id=867214375 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="81" type="Button" parent="GridContainer" unique_id=617292975 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="82" type="Button" parent="GridContainer" unique_id=2132192265 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="83" type="Button" parent="GridContainer" unique_id=193701274 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="84" type="Button" parent="GridContainer" unique_id=2060598436 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="85" type="Button" parent="GridContainer" unique_id=44711194 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="86" type="Button" parent="GridContainer" unique_id=1723992314 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="87" type="Button" parent="GridContainer" unique_id=1762433108 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="88" type="Button" parent="GridContainer" unique_id=1834918308 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="89" type="Button" parent="GridContainer" unique_id=1836917197 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="90" type="Button" parent="GridContainer" unique_id=1766308537 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="91" type="Button" parent="GridContainer" unique_id=1310748237 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="92" type="Button" parent="GridContainer" unique_id=1448550324 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="93" type="Button" parent="GridContainer" unique_id=1024287771 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="94" type="Button" parent="GridContainer" unique_id=1611202108 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="95" type="Button" parent="GridContainer" unique_id=944273420 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="96" type="Button" parent="GridContainer" unique_id=780106890 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="97" type="Button" parent="GridContainer" unique_id=806637335 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="98" type="Button" parent="GridContainer" unique_id=1063091618 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="99" type="Button" parent="GridContainer" unique_id=315510421 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="100" type="Button" parent="GridContainer" unique_id=61060624 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="101" type="Button" parent="GridContainer" unique_id=1244850515 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="102" type="Button" parent="GridContainer" unique_id=1063565181 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="103" type="Button" parent="GridContainer" unique_id=784839581 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="104" type="Button" parent="GridContainer" unique_id=331474111 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="105" type="Button" parent="GridContainer" unique_id=911333170 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="106" type="Button" parent="GridContainer" unique_id=1346044077 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="107" type="Button" parent="GridContainer" unique_id=1243049333 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="108" type="Button" parent="GridContainer" unique_id=1438752806 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="109" type="Button" parent="GridContainer" unique_id=1494227842 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="110" type="Button" parent="GridContainer" unique_id=1008345294 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="111" type="Button" parent="GridContainer" unique_id=901653306 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="112" type="Button" parent="GridContainer" unique_id=305700842 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="113" type="Button" parent="GridContainer" unique_id=675388602 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_sfnlk")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_sfnlk")
+theme_override_styles/hover = SubResource("StyleBoxFlat_sfnlk")
+
+[node name="114" type="Button" parent="GridContainer" unique_id=1149447014 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="115" type="Button" parent="GridContainer" unique_id=2066900492 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="116" type="Button" parent="GridContainer" unique_id=1396109005 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="117" type="Button" parent="GridContainer" unique_id=778847771 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="118" type="Button" parent="GridContainer" unique_id=1463518324 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="119" type="Button" parent="GridContainer" unique_id=147155576 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="120" type="Button" parent="GridContainer" unique_id=1439481127 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="121" type="Button" parent="GridContainer" unique_id=1101015247 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="122" type="Button" parent="GridContainer" unique_id=2113872383 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="123" type="Button" parent="GridContainer" unique_id=1608316413 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="124" type="Button" parent="GridContainer" unique_id=1946527557 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="125" type="Button" parent="GridContainer" unique_id=303579830 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="126" type="Button" parent="GridContainer" unique_id=1204837179 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="127" type="Button" parent="GridContainer" unique_id=825881380 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="128" type="Button" parent="GridContainer" unique_id=886131190 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="129" type="Button" parent="GridContainer" unique_id=2079332564 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="130" type="Button" parent="GridContainer" unique_id=1161853833 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="131" type="Button" parent="GridContainer" unique_id=1039853146 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="132" type="Button" parent="GridContainer" unique_id=1993613079 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="133" type="Button" parent="GridContainer" unique_id=523888450 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="134" type="Button" parent="GridContainer" unique_id=1268881539 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="135" type="Button" parent="GridContainer" unique_id=2146020887 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="136" type="Button" parent="GridContainer" unique_id=2021509685 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="137" type="Button" parent="GridContainer" unique_id=1171651513 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="138" type="Button" parent="GridContainer" unique_id=1414311421 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="139" type="Button" parent="GridContainer" unique_id=1495957100 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="140" type="Button" parent="GridContainer" unique_id=123516659 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="141" type="Button" parent="GridContainer" unique_id=2092691965 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="142" type="Button" parent="GridContainer" unique_id=1959787065 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="143" type="Button" parent="GridContainer" unique_id=1209504014 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="144" type="Button" parent="GridContainer" unique_id=1784641362 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="145" type="Button" parent="GridContainer" unique_id=2111918196 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="146" type="Button" parent="GridContainer" unique_id=973184421 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="147" type="Button" parent="GridContainer" unique_id=1222662135 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="148" type="Button" parent="GridContainer" unique_id=1845857157 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="149" type="Button" parent="GridContainer" unique_id=325379874 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="150" type="Button" parent="GridContainer" unique_id=1351631553 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="151" type="Button" parent="GridContainer" unique_id=101263659 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="152" type="Button" parent="GridContainer" unique_id=1284437904 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="153" type="Button" parent="GridContainer" unique_id=43536292 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="154" type="Button" parent="GridContainer" unique_id=707459281 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="155" type="Button" parent="GridContainer" unique_id=1559125320 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="156" type="Button" parent="GridContainer" unique_id=379920884 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="157" type="Button" parent="GridContainer" unique_id=1771312772 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="158" type="Button" parent="GridContainer" unique_id=1057689778 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="159" type="Button" parent="GridContainer" unique_id=1986697104 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="160" type="Button" parent="GridContainer" unique_id=1134448107 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="161" type="Button" parent="GridContainer" unique_id=292002963 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="162" type="Button" parent="GridContainer" unique_id=1829313696 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="163" type="Button" parent="GridContainer" unique_id=1264080073 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="164" type="Button" parent="GridContainer" unique_id=1675946546 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="165" type="Button" parent="GridContainer" unique_id=1854324022 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="166" type="Button" parent="GridContainer" unique_id=600598346 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="167" type="Button" parent="GridContainer" unique_id=1136278 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="168" type="Button" parent="GridContainer" unique_id=821122732 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="169" type="Button" parent="GridContainer" unique_id=595932220 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="170" type="Button" parent="GridContainer" unique_id=108519705 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="171" type="Button" parent="GridContainer" unique_id=85547125 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="172" type="Button" parent="GridContainer" unique_id=334973973 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="173" type="Button" parent="GridContainer" unique_id=965905554 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="174" type="Button" parent="GridContainer" unique_id=427117817 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="175" type="Button" parent="GridContainer" unique_id=142893837 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="176" type="Button" parent="GridContainer" unique_id=1068947397 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="177" type="Button" parent="GridContainer" unique_id=966284332 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="178" type="Button" parent="GridContainer" unique_id=2078372210 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="179" type="Button" parent="GridContainer" unique_id=93410805 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="180" type="Button" parent="GridContainer" unique_id=329177495 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="181" type="Button" parent="GridContainer" unique_id=37257274 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="182" type="Button" parent="GridContainer" unique_id=22897461 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="183" type="Button" parent="GridContainer" unique_id=503240041 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="184" type="Button" parent="GridContainer" unique_id=140115774 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="185" type="Button" parent="GridContainer" unique_id=1951332021 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="186" type="Button" parent="GridContainer" unique_id=444416773 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="187" type="Button" parent="GridContainer" unique_id=756475342 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="188" type="Button" parent="GridContainer" unique_id=2120305954 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="189" type="Button" parent="GridContainer" unique_id=1820909148 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="190" type="Button" parent="GridContainer" unique_id=451512721 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="191" type="Button" parent="GridContainer" unique_id=1220305967 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="192" type="Button" parent="GridContainer" unique_id=21062185 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="193" type="Button" parent="GridContainer" unique_id=787487384 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="194" type="Button" parent="GridContainer" unique_id=261390014 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="195" type="Button" parent="GridContainer" unique_id=1036509475 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="196" type="Button" parent="GridContainer" unique_id=778037380 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="197" type="Button" parent="GridContainer" unique_id=930275865 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="198" type="Button" parent="GridContainer" unique_id=1623303920 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="199" type="Button" parent="GridContainer" unique_id=981347724 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="200" type="Button" parent="GridContainer" unique_id=675845354 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="201" type="Button" parent="GridContainer" unique_id=156763148 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="202" type="Button" parent="GridContainer" unique_id=445043768 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="203" type="Button" parent="GridContainer" unique_id=121010971 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="204" type="Button" parent="GridContainer" unique_id=1459430279 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="205" type="Button" parent="GridContainer" unique_id=643582485 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="206" type="Button" parent="GridContainer" unique_id=1733820662 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="207" type="Button" parent="GridContainer" unique_id=509861524 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="208" type="Button" parent="GridContainer" unique_id=1858933540 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="209" type="Button" parent="GridContainer" unique_id=1357844333 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="210" type="Button" parent="GridContainer" unique_id=1020579052 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="211" type="Button" parent="GridContainer" unique_id=1453229379 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="212" type="Button" parent="GridContainer" unique_id=238847486 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="213" type="Button" parent="GridContainer" unique_id=1303148113 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="214" type="Button" parent="GridContainer" unique_id=38928342 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="215" type="Button" parent="GridContainer" unique_id=718414765 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="216" type="Button" parent="GridContainer" unique_id=1518076876 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="217" type="Button" parent="GridContainer" unique_id=736589503 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="218" type="Button" parent="GridContainer" unique_id=494505453 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="219" type="Button" parent="GridContainer" unique_id=740842699 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="220" type="Button" parent="GridContainer" unique_id=1307540888 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="221" type="Button" parent="GridContainer" unique_id=1272940805 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="222" type="Button" parent="GridContainer" unique_id=1146439142 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="223" type="Button" parent="GridContainer" unique_id=235682448 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="224" type="Button" parent="GridContainer" unique_id=1828830773 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="225" type="Button" parent="GridContainer" unique_id=721183687 groups=["buttons"]]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/normal = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a1c6o")
+theme_override_styles/hover = SubResource("StyleBoxFlat_a1c6o")
+
+[node name="Win" type="Panel" parent="." unique_id=1635277549]
+visible = false
+layout_mode = 0
+offset_left = 314.0
+offset_top = 32.0
+offset_right = 914.0
+offset_bottom = 633.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_q6ivq")
+
+[node name="Label" type="Label" parent="Win" unique_id=1608507965]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 23.0
+grow_horizontal = 2
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 80
+text = "BLUE WIN !!!"
+horizontal_alignment = 1
+
+[node name="Label" type="Label" parent="." unique_id=2113301014]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 6.0
+offset_right = 243.0
+offset_bottom = 94.0
+theme_override_fonts/font = ExtResource("2_yqtgn")
+theme_override_font_sizes/font_size = 64
+text = "P1 Turn"
+
+[node name="Timer" type="Label" parent="." unique_id=224994046]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 605.0
+offset_right = 340.0
+offset_bottom = 672.0
+theme_override_font_sizes/font_size = 48
+text = "TIME LEFT: 60s"
+
+[node name="last" type="RichTextLabel" parent="." unique_id=1227599692]
+layout_mode = 0
+offset_left = 965.0
+offset_top = -10253.0
+offset_right = 1130.0
+offset_bottom = 620.0
+theme_override_font_sizes/normal_font_size = 32
+vertical_alignment = 2
+
+[connection signal="pressed" from="GridContainer/01" to="." method="_on__pressed"]
+[connection signal="pressed" from="GridContainer/02" to="." method="_on_2_1_pressed"]
+[connection signal="pressed" from="GridContainer/03" to="." method="_on_3_1_pressed"]
+[connection signal="pressed" from="GridContainer/04" to="." method="_on_4_1_pressed"]
+[connection signal="pressed" from="GridContainer/05" to="." method="_on_5_1_pressed"]
+[connection signal="pressed" from="GridContainer/06" to="." method="_on_1_1_pressed"]
+[connection signal="pressed" from="GridContainer/07" to="." method="_on_2_1_pressed"]
+[connection signal="pressed" from="GridContainer/08" to="." method="_on_3_1_pressed"]
+[connection signal="pressed" from="GridContainer/09" to="." method="_on_4_1_pressed"]
+[connection signal="pressed" from="GridContainer/10" to="." method="_on_5_1_pressed"]
+[connection signal="pressed" from="GridContainer/11" to="." method="_on_1_1_pressed"]
+[connection signal="pressed" from="GridContainer/12" to="." method="_on_2_1_pressed"]
+[connection signal="pressed" from="GridContainer/13" to="." method="_on_3_1_pressed"]
+[connection signal="pressed" from="GridContainer/14" to="." method="_on_4_1_pressed"]
+[connection signal="pressed" from="GridContainer/15" to="." method="_on_5_1_pressed"]
+[connection signal="pressed" from="GridContainer/16" to="." method="_on_1_1_pressed"]
+[connection signal="pressed" from="GridContainer/17" to="." method="_on_2_1_pressed"]
+[connection signal="pressed" from="GridContainer/18" to="." method="_on_3_1_pressed"]
+[connection signal="pressed" from="GridContainer/19" to="." method="_on_4_1_pressed"]
+[connection signal="pressed" from="GridContainer/20" to="." method="_on_5_1_pressed"]
+[connection signal="pressed" from="GridContainer/21" to="." method="_on_1_1_pressed"]
+[connection signal="pressed" from="GridContainer/22" to="." method="_on_2_1_pressed"]
+[connection signal="pressed" from="GridContainer/23" to="." method="_on_3_1_pressed"]
+[connection signal="pressed" from="GridContainer/24" to="." method="_on_4_1_pressed"]
+[connection signal="pressed" from="GridContainer/25" to="." method="_on_5_1_pressed"]
+[connection signal="pressed" from="GridContainer/26" to="." method="_on__pressed"]
+[connection signal="pressed" from="GridContainer/27" to="." method="_on_2_1_pressed"]
+[connection signal="pressed" from="GridContainer/28" to="." method="_on_3_1_pressed"]
+[connection signal="pressed" from="GridContainer/29" to="." method="_on_4_1_pressed"]
+[connection signal="pressed" from="GridContainer/30" to="." method="_on_5_1_pressed"]
+[connection signal="pressed" from="GridContainer/31" to="." method="_on_1_1_pressed"]
+[connection signal="pressed" from="GridContainer/32" to="." method="_on_2_1_pressed"]
+[connection signal="pressed" from="GridContainer/33" to="." method="_on_3_1_pressed"]
+[connection signal="pressed" from="GridContainer/34" to="." method="_on_4_1_pressed"]
+[connection signal="pressed" from="GridContainer/35" to="." method="_on_5_1_pressed"]
+[connection signal="pressed" from="GridContainer/36" to="." method="_on_1_1_pressed"]
+[connection signal="pressed" from="GridContainer/37" to="." method="_on_2_1_pressed"]
+[connection signal="pressed" from="GridContainer/38" to="." method="_on_3_1_pressed"]
+[connection signal="pressed" from="GridContainer/39" to="." method="_on_4_1_pressed"]
+[connection signal="pressed" from="GridContainer/40" to="." method="_on_5_1_pressed"]
+[connection signal="pressed" from="GridContainer/41" to="." method="_on_1_1_pressed"]
+[connection signal="pressed" from="GridContainer/42" to="." method="_on_2_1_pressed"]
+[connection signal="pressed" from="GridContainer/43" to="." method="_on_3_1_pressed"]
+[connection signal="pressed" from="GridContainer/44" to="." method="_on_4_1_pressed"]
+[connection signal="pressed" from="GridContainer/45" to="." method="_on_5_1_pressed"]
+[connection signal="pressed" from="GridContainer/46" to="." method="_on_1_1_pressed"]
+[connection signal="pressed" from="GridContainer/47" to="." method="_on_2_1_pressed"]
+[connection signal="pressed" from="GridContainer/48" to="." method="_on_3_1_pressed"]
+[connection signal="pressed" from="GridContainer/49" to="." method="_on_4_1_pressed"]
+[connection signal="pressed" from="GridContainer/50" to="." method="_on_5_1_pressed"]
+[connection signal="pressed" from="GridContainer/51" to="." method="_on__pressed"]
+[connection signal="pressed" from="GridContainer/52" to="." method="_on_2_1_pressed"]
+[connection signal="pressed" from="GridContainer/53" to="." method="_on_3_1_pressed"]
+[connection signal="pressed" from="GridContainer/54" to="." method="_on_4_1_pressed"]
+[connection signal="pressed" from="GridContainer/55" to="." method="_on_5_1_pressed"]
+[connection signal="pressed" from="GridContainer/56" to="." method="_on_1_1_pressed"]
+[connection signal="pressed" from="GridContainer/57" to="." method="_on_2_1_pressed"]
+[connection signal="pressed" from="GridContainer/58" to="." method="_on_3_1_pressed"]
+[connection signal="pressed" from="GridContainer/59" to="." method="_on_4_1_pressed"]
+[connection signal="pressed" from="GridContainer/60" to="." method="_on_5_1_pressed"]
+[connection signal="pressed" from="GridContainer/61" to="." method="_on_1_1_pressed"]
+[connection signal="pressed" from="GridContainer/62" to="." method="_on_2_1_pressed"]
+[connection signal="pressed" from="GridContainer/63" to="." method="_on_3_1_pressed"]
+[connection signal="pressed" from="GridContainer/64" to="." method="_on_4_1_pressed"]
+[connection signal="pressed" from="GridContainer/65" to="." method="_on_5_1_pressed"]
+[connection signal="pressed" from="GridContainer/66" to="." method="_on_1_1_pressed"]
+[connection signal="pressed" from="GridContainer/67" to="." method="_on_2_1_pressed"]
+[connection signal="pressed" from="GridContainer/68" to="." method="_on_3_1_pressed"]
+[connection signal="pressed" from="GridContainer/69" to="." method="_on_4_1_pressed"]
+[connection signal="pressed" from="GridContainer/70" to="." method="_on_5_1_pressed"]
+[connection signal="pressed" from="GridContainer/71" to="." method="_on_1_1_pressed"]
+[connection signal="pressed" from="GridContainer/72" to="." method="_on_2_1_pressed"]
+[connection signal="pressed" from="GridContainer/73" to="." method="_on_3_1_pressed"]
+[connection signal="pressed" from="GridContainer/74" to="." method="_on_4_1_pressed"]
+[connection signal="pressed" from="GridContainer/75" to="." method="_on_5_1_pressed"]
+[connection signal="pressed" from="GridContainer/76" to="." method="_on__pressed"]
+[connection signal="pressed" from="GridContainer/77" to="." method="_on_2_1_pressed"]
+[connection signal="pressed" from="GridContainer/78" to="." method="_on_3_1_pressed"]
+[connection signal="pressed" from="GridContainer/79" to="." method="_on_4_1_pressed"]
+[connection signal="pressed" from="GridContainer/80" to="." method="_on_5_1_pressed"]
+[connection signal="pressed" from="GridContainer/81" to="." method="_on_1_1_pressed"]
+[connection signal="pressed" from="GridContainer/82" to="." method="_on_2_1_pressed"]
+[connection signal="pressed" from="GridContainer/83" to="." method="_on_3_1_pressed"]
+[connection signal="pressed" from="GridContainer/84" to="." method="_on_4_1_pressed"]
+[connection signal="pressed" from="GridContainer/85" to="." method="_on_5_1_pressed"]
+[connection signal="pressed" from="GridContainer/86" to="." method="_on_1_1_pressed"]
+[connection signal="pressed" from="GridContainer/87" to="." method="_on_2_1_pressed"]
+[connection signal="pressed" from="GridContainer/88" to="." method="_on_3_1_pressed"]
+[connection signal="pressed" from="GridContainer/89" to="." method="_on_4_1_pressed"]
+[connection signal="pressed" from="GridContainer/90" to="." method="_on_5_1_pressed"]
+[connection signal="pressed" from="GridContainer/91" to="." method="_on_1_1_pressed"]
+[connection signal="pressed" from="GridContainer/92" to="." method="_on_2_1_pressed"]
+[connection signal="pressed" from="GridContainer/93" to="." method="_on_3_1_pressed"]
+[connection signal="pressed" from="GridContainer/94" to="." method="_on_4_1_pressed"]
+[connection signal="pressed" from="GridContainer/95" to="." method="_on_5_1_pressed"]
+[connection signal="pressed" from="GridContainer/96" to="." method="_on_1_1_pressed"]
+[connection signal="pressed" from="GridContainer/97" to="." method="_on_2_1_pressed"]
+[connection signal="pressed" from="GridContainer/98" to="." method="_on_3_1_pressed"]
+[connection signal="pressed" from="GridContainer/99" to="." method="_on_4_1_pressed"]
+[connection signal="pressed" from="GridContainer/100" to="." method="_on_5_1_pressed"]
+[connection signal="pressed" from="GridContainer/101" to="." method="_on_1_1_pressed"]
+[connection signal="pressed" from="GridContainer/102" to="." method="_on_2_1_pressed"]
+[connection signal="pressed" from="GridContainer/103" to="." method="_on_3_1_pressed"]
+[connection signal="pressed" from="GridContainer/104" to="." method="_on_4_1_pressed"]
+[connection signal="pressed" from="GridContainer/105" to="." method="_on_5_1_pressed"]
+[connection signal="pressed" from="GridContainer/106" to="." method="_on_1_1_pressed"]
+[connection signal="pressed" from="GridContainer/107" to="." method="_on_2_1_pressed"]
+[connection signal="pressed" from="GridContainer/108" to="." method="_on_3_1_pressed"]
+[connection signal="pressed" from="GridContainer/109" to="." method="_on_4_1_pressed"]
+[connection signal="pressed" from="GridContainer/110" to="." method="_on_5_1_pressed"]
+[connection signal="pressed" from="GridContainer/111" to="." method="_on_5_1_pressed"]
+[connection signal="pressed" from="GridContainer/112" to="." method="_on_1_1_pressed"]
+[connection signal="pressed" from="GridContainer/113" to="." method="_on_2_1_pressed"]
+[connection signal="pressed" from="GridContainer/114" to="." method="_on_3_1_pressed"]
+[connection signal="pressed" from="GridContainer/115" to="." method="_on_4_1_pressed"]
+[connection signal="pressed" from="GridContainer/116" to="." method="_on_5_1_pressed"]
+[connection signal="pressed" from="GridContainer/117" to="." method="_on_1_1_pressed"]
+[connection signal="pressed" from="GridContainer/118" to="." method="_on_2_1_pressed"]
+[connection signal="pressed" from="GridContainer/119" to="." method="_on_3_1_pressed"]
+[connection signal="pressed" from="GridContainer/120" to="." method="_on_4_1_pressed"]
+[connection signal="pressed" from="GridContainer/121" to="." method="_on_5_1_pressed"]
+[connection signal="pressed" from="GridContainer/122" to="." method="_on_2_1_pressed"]
+[connection signal="pressed" from="GridContainer/123" to="." method="_on_3_1_pressed"]
+[connection signal="pressed" from="GridContainer/124" to="." method="_on_4_1_pressed"]
+[connection signal="pressed" from="GridContainer/125" to="." method="_on_5_1_pressed"]
+[connection signal="pressed" from="GridContainer/126" to="." method="_on_1_1_pressed"]
+[connection signal="pressed" from="GridContainer/127" to="." method="_on_2_1_pressed"]
+[connection signal="pressed" from="GridContainer/128" to="." method="_on_3_1_pressed"]
+[connection signal="pressed" from="GridContainer/129" to="." method="_on_4_1_pressed"]
+[connection signal="pressed" from="GridContainer/130" to="." method="_on_5_1_pressed"]
+[connection signal="pressed" from="GridContainer/131" to="." method="_on_1_1_pressed"]
+[connection signal="pressed" from="GridContainer/132" to="." method="_on_2_1_pressed"]
+[connection signal="pressed" from="GridContainer/133" to="." method="_on_3_1_pressed"]
+[connection signal="pressed" from="GridContainer/134" to="." method="_on_4_1_pressed"]
+[connection signal="pressed" from="GridContainer/135" to="." method="_on_5_1_pressed"]
+[connection signal="pressed" from="GridContainer/136" to="." method="_on_5_1_pressed"]
+[connection signal="pressed" from="GridContainer/137" to="." method="_on_1_1_pressed"]
+[connection signal="pressed" from="GridContainer/138" to="." method="_on_2_1_pressed"]
+[connection signal="pressed" from="GridContainer/139" to="." method="_on_3_1_pressed"]
+[connection signal="pressed" from="GridContainer/140" to="." method="_on_4_1_pressed"]
+[connection signal="pressed" from="GridContainer/141" to="." method="_on_5_1_pressed"]
+[connection signal="pressed" from="GridContainer/142" to="." method="_on_1_1_pressed"]
+[connection signal="pressed" from="GridContainer/143" to="." method="_on_2_1_pressed"]
+[connection signal="pressed" from="GridContainer/144" to="." method="_on_3_1_pressed"]
+[connection signal="pressed" from="GridContainer/145" to="." method="_on_4_1_pressed"]
+[connection signal="pressed" from="GridContainer/146" to="." method="_on_5_1_pressed"]
+[connection signal="pressed" from="GridContainer/147" to="." method="_on_2_1_pressed"]
+[connection signal="pressed" from="GridContainer/148" to="." method="_on_3_1_pressed"]
+[connection signal="pressed" from="GridContainer/149" to="." method="_on_4_1_pressed"]
+[connection signal="pressed" from="GridContainer/150" to="." method="_on_5_1_pressed"]
+[connection signal="pressed" from="GridContainer/151" to="." method="_on_1_1_pressed"]
+[connection signal="pressed" from="GridContainer/152" to="." method="_on_2_1_pressed"]
+[connection signal="pressed" from="GridContainer/153" to="." method="_on_3_1_pressed"]
+[connection signal="pressed" from="GridContainer/154" to="." method="_on_4_1_pressed"]
+[connection signal="pressed" from="GridContainer/155" to="." method="_on_5_1_pressed"]
+[connection signal="pressed" from="GridContainer/156" to="." method="_on_1_1_pressed"]
+[connection signal="pressed" from="GridContainer/157" to="." method="_on_2_1_pressed"]
+[connection signal="pressed" from="GridContainer/158" to="." method="_on_3_1_pressed"]
+[connection signal="pressed" from="GridContainer/159" to="." method="_on_4_1_pressed"]
+[connection signal="pressed" from="GridContainer/160" to="." method="_on_5_1_pressed"]
+[connection signal="pressed" from="GridContainer/161" to="." method="_on_5_1_pressed"]
+[connection signal="pressed" from="GridContainer/162" to="." method="_on_1_1_pressed"]
+[connection signal="pressed" from="GridContainer/163" to="." method="_on_2_1_pressed"]
+[connection signal="pressed" from="GridContainer/164" to="." method="_on_3_1_pressed"]
+[connection signal="pressed" from="GridContainer/165" to="." method="_on_4_1_pressed"]
+[connection signal="pressed" from="GridContainer/166" to="." method="_on_5_1_pressed"]
+[connection signal="pressed" from="GridContainer/167" to="." method="_on_1_1_pressed"]
+[connection signal="pressed" from="GridContainer/168" to="." method="_on_2_1_pressed"]
+[connection signal="pressed" from="GridContainer/169" to="." method="_on_3_1_pressed"]
+[connection signal="pressed" from="GridContainer/170" to="." method="_on_4_1_pressed"]
+[connection signal="pressed" from="GridContainer/171" to="." method="_on_5_1_pressed"]
+[connection signal="pressed" from="GridContainer/172" to="." method="_on_5_1_pressed"]
+[connection signal="pressed" from="GridContainer/173" to="." method="_on_1_1_pressed"]
+[connection signal="pressed" from="GridContainer/174" to="." method="_on_2_1_pressed"]
+[connection signal="pressed" from="GridContainer/175" to="." method="_on_3_1_pressed"]
+[connection signal="pressed" from="GridContainer/176" to="." method="_on_4_1_pressed"]
+[connection signal="pressed" from="GridContainer/177" to="." method="_on_5_1_pressed"]
+[connection signal="pressed" from="GridContainer/178" to="." method="_on_1_1_pressed"]
+[connection signal="pressed" from="GridContainer/179" to="." method="_on_2_1_pressed"]
+[connection signal="pressed" from="GridContainer/180" to="." method="_on_3_1_pressed"]
+[connection signal="pressed" from="GridContainer/181" to="." method="_on_4_1_pressed"]
+[connection signal="pressed" from="GridContainer/182" to="." method="_on_5_1_pressed"]
+[connection signal="pressed" from="GridContainer/183" to="." method="_on_5_1_pressed"]
+[connection signal="pressed" from="GridContainer/184" to="." method="_on_1_1_pressed"]
+[connection signal="pressed" from="GridContainer/185" to="." method="_on_2_1_pressed"]
+[connection signal="pressed" from="GridContainer/186" to="." method="_on_3_1_pressed"]
+[connection signal="pressed" from="GridContainer/187" to="." method="_on_4_1_pressed"]
+[connection signal="pressed" from="GridContainer/188" to="." method="_on_5_1_pressed"]
+[connection signal="pressed" from="GridContainer/189" to="." method="_on_1_1_pressed"]
+[connection signal="pressed" from="GridContainer/190" to="." method="_on_2_1_pressed"]
+[connection signal="pressed" from="GridContainer/191" to="." method="_on_3_1_pressed"]
+[connection signal="pressed" from="GridContainer/192" to="." method="_on_4_1_pressed"]
+[connection signal="pressed" from="GridContainer/193" to="." method="_on_5_1_pressed"]
+[connection signal="pressed" from="GridContainer/194" to="." method="_on_5_1_pressed"]
+[connection signal="pressed" from="GridContainer/195" to="." method="_on_1_1_pressed"]
+[connection signal="pressed" from="GridContainer/196" to="." method="_on_2_1_pressed"]
+[connection signal="pressed" from="GridContainer/197" to="." method="_on_3_1_pressed"]
+[connection signal="pressed" from="GridContainer/198" to="." method="_on_4_1_pressed"]
+[connection signal="pressed" from="GridContainer/199" to="." method="_on_5_1_pressed"]
+[connection signal="pressed" from="GridContainer/200" to="." method="_on_1_1_pressed"]
+[connection signal="pressed" from="GridContainer/201" to="." method="_on_2_1_pressed"]
+[connection signal="pressed" from="GridContainer/202" to="." method="_on_3_1_pressed"]
+[connection signal="pressed" from="GridContainer/203" to="." method="_on_4_1_pressed"]
+[connection signal="pressed" from="GridContainer/204" to="." method="_on_5_1_pressed"]
+[connection signal="pressed" from="GridContainer/205" to="." method="_on_5_1_pressed"]
+[connection signal="pressed" from="GridContainer/206" to="." method="_on_1_1_pressed"]
+[connection signal="pressed" from="GridContainer/207" to="." method="_on_2_1_pressed"]
+[connection signal="pressed" from="GridContainer/208" to="." method="_on_3_1_pressed"]
+[connection signal="pressed" from="GridContainer/209" to="." method="_on_4_1_pressed"]
+[connection signal="pressed" from="GridContainer/210" to="." method="_on_5_1_pressed"]
+[connection signal="pressed" from="GridContainer/211" to="." method="_on_1_1_pressed"]
+[connection signal="pressed" from="GridContainer/212" to="." method="_on_2_1_pressed"]
+[connection signal="pressed" from="GridContainer/213" to="." method="_on_3_1_pressed"]
+[connection signal="pressed" from="GridContainer/214" to="." method="_on_4_1_pressed"]
+[connection signal="pressed" from="GridContainer/215" to="." method="_on_5_1_pressed"]
+[connection signal="pressed" from="GridContainer/216" to="." method="_on_3_1_pressed"]
+[connection signal="pressed" from="GridContainer/217" to="." method="_on_4_1_pressed"]
+[connection signal="pressed" from="GridContainer/218" to="." method="_on_5_1_pressed"]
+[connection signal="pressed" from="GridContainer/219" to="." method="_on_1_1_pressed"]
+[connection signal="pressed" from="GridContainer/220" to="." method="_on_2_1_pressed"]
+[connection signal="pressed" from="GridContainer/221" to="." method="_on_3_1_pressed"]
+[connection signal="pressed" from="GridContainer/222" to="." method="_on_4_1_pressed"]
+[connection signal="pressed" from="GridContainer/223" to="." method="_on_5_1_pressed"]
+[connection signal="pressed" from="GridContainer/224" to="." method="_on_5_1_pressed"]
+[connection signal="pressed" from="GridContainer/225" to="." method="_on_4_1_pressed"]

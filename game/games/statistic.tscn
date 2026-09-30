@@ -1,0 +1,216 @@
+[gd_scene format=3 uid="uid://dr2sqnhv1c6im"]
+
+[ext_resource type="Script" uid="uid://bklsoorafna8v" path="res://game/scripts/statistic.gd" id="1_51kis"]
+[ext_resource type="Texture2D" uid="uid://ddfclw5gkkt6i" path="res://assets/chess/white_dot.png" id="2_mkkm2"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1o7ux"]
+bg_color = Color(0.5254902, 0.27450982, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_51kis"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_531ax"]
+bg_color = Color(0.5294118, 0.27450982, 0, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1o7ux"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mkkm2"]
+
+[node name="Statistic" type="Control" unique_id=463371194]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_51kis")
+
+[node name="Panel" type="Panel" parent="." unique_id=814729662]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_1o7ux")
+
+[node name="card" type="Panel" parent="." unique_id=288181439]
+z_index = 1
+layout_mode = 0
+offset_left = 460.0
+offset_top = 213.0
+offset_right = 710.0
+offset_bottom = 613.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_51kis")
+
+[node name="next player" type="Button" parent="card" unique_id=372088483]
+z_index = -1
+layout_mode = 0
+offset_left = -460.0
+offset_top = -213.0
+offset_right = 692.0
+offset_bottom = 435.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_531ax")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_531ax")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_1o7ux")
+
+[node name="number" type="Label" parent="card" unique_id=991096850]
+z_index = 1
+layout_mode = 0
+offset_top = 1.0
+offset_right = 248.0
+offset_bottom = 400.0
+theme_override_font_sizes/font_size = 192
+text = "9"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="next player2" type="Button" parent="." unique_id=2038727219]
+visible = false
+z_index = 2
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+theme_override_font_sizes/font_size = 128
+theme_override_styles/normal = SubResource("StyleBoxFlat_mkkm2")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_mkkm2")
+theme_override_styles/hover = SubResource("StyleBoxFlat_mkkm2")
+text = "Pass to player 4"
+
+[node name="Game" type="Node2D" parent="." unique_id=1850905485]
+visible = false
+
+[node name="P1" type="HBoxContainer" parent="Game" unique_id=378014189]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 552.0
+offset_right = 1153.0
+offset_bottom = 648.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="5" type="Button" parent="Game/P1" unique_id=40407543]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 48
+text = "Bet 5"
+
+[node name="15" type="Button" parent="Game/P1" unique_id=1650284066]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 48
+text = "Bet 15"
+
+[node name="30" type="Button" parent="Game/P1" unique_id=1763054480]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 48
+text = "Bet 30"
+
+[node name="50" type="Button" parent="Game/P1" unique_id=993984529]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 48
+text = "Bet 50"
+
+[node name="70" type="Button" parent="Game/P1" unique_id=1140328687]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 48
+text = "Bet 70"
+
+[node name="85" type="Button" parent="Game/P1" unique_id=1458648364]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 48
+text = "Bet 85"
+
+[node name="100" type="Button" parent="Game/P1" unique_id=1262455711]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 48
+text = "Bet 100"
+
+[node name="Bet" type="Label" parent="Game" unique_id=1505837222]
+offset_left = 354.0
+offset_top = 210.0
+offset_right = 785.0
+offset_bottom = 298.0
+theme_override_font_sizes/font_size = 64
+text = "Current Bet: 0"
+
+[node name="turn" type="Label" parent="Game" unique_id=1361052500]
+offset_left = 350.0
+offset_top = 460.0
+offset_right = 781.0
+offset_bottom = 548.0
+theme_override_font_sizes/font_size = 64
+text = "Player 1 turn"
+
+[node name="Stop" type="Button" parent="Game" unique_id=287223488]
+offset_left = 965.0
+offset_right = 1152.0
+offset_bottom = 96.0
+theme_override_font_sizes/font_size = 64
+text = "STOP!"
+
+[node name="next_player_turn" type="Button" parent="Game" unique_id=1721216460]
+offset_left = 389.0
+offset_top = 300.0
+offset_right = 755.0
+offset_bottom = 396.0
+theme_override_font_sizes/font_size = 64
+text = "Next Player"
+
+[node name="Spend" type="Label" parent="Game" unique_id=190849692]
+offset_left = 5.0
+offset_top = 1.0
+offset_right = 630.0
+offset_bottom = 89.0
+theme_override_font_sizes/font_size = 64
+text = "Money Spend: 0/350"
+
+[node name="End" type="Panel" parent="." unique_id=1310635046]
+visible = false
+z_index = 2
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="End" unique_id=1163535068]
+layout_mode = 0
+offset_left = 202.0
+offset_top = 122.0
+offset_right = 954.0
+offset_bottom = 556.0
+
+[node name="Label" type="Label" parent="End/Panel" unique_id=668577215]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 88.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 64
+text = "P1 WIN !"
+horizontal_alignment = 1
+
+[node name="Winner" type="Sprite2D" parent="End/Panel" unique_id=1925939779]
+position = Vector2(378, 245)
+scale = Vector2(20, 20)
+texture = ExtResource("2_mkkm2")
+
+[connection signal="pressed" from="card/next player" to="." method="_on_next_player_pressed"]
+[connection signal="pressed" from="next player2" to="." method="_on_next_player_2_pressed"]
+[connection signal="pressed" from="Game/P1/5" to="." method="_on_5_pressed"]
+[connection signal="pressed" from="Game/P1/15" to="." method="_on_15_pressed"]
+[connection signal="pressed" from="Game/P1/30" to="." method="_on_30_pressed"]
+[connection signal="pressed" from="Game/P1/50" to="." method="_on_50_pressed"]
+[connection signal="pressed" from="Game/P1/70" to="." method="_on_70_pressed"]
+[connection signal="pressed" from="Game/P1/85" to="." method="_on_85_pressed"]
+[connection signal="pressed" from="Game/P1/100" to="." method="_on_100_pressed"]
+[connection signal="pressed" from="Game/Stop" to="." method="_on_stop_pressed"]
+[connection signal="pressed" from="Game/next_player_turn" to="." method="_on_next_player_turn_pressed"]

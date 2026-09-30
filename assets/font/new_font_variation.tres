@@ -1,0 +1,8 @@
+[gd_resource type="FontVariation" format=3 uid="uid://kakl4nwm4oh6"]
+
+[ext_resource type="FontFile" uid="uid://bsk5mo1u7ej80" path="res://assets/font/SoccerLeague.ttf" id="1_w2jjn"]
+[ext_resource type="FontFile" uid="uid://dop5o5javcfnc" path="res://assets/font/Roboto-Black.ttf" id="2_su6qm"]
+
+[resource]
+fallbacks = Array[Font]([ExtResource("2_su6qm")])
+base_font = ExtResource("1_w2jjn")

@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://b78711aw7wu3k"]
+
+[ext_resource type="Texture2D" uid="uid://cxmoyvx4uxu4" path="res://assets/shogi/king.png" id="2_2scpe"]
+
+[node name="chess_texture" type="Sprite2D" unique_id=850066069]
+physics_interpolation_mode = 2
+scale = Vector2(1.167, 1.167)
+texture = ExtResource("2_2scpe")

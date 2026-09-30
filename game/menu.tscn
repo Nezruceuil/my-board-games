@@ -1,0 +1,1060 @@
+[gd_scene format=3 uid="uid://caokjbwdu31oi"]
+
+[ext_resource type="Script" uid="uid://nykmpuuvt073" path="res://game/scripts/menu.gd" id="1_abghd"]
+[ext_resource type="Texture2D" uid="uid://bm3eewpat2h0c" path="res://assets/Ecu_orange.png" id="2_1g5p4"]
+[ext_resource type="Texture2D" uid="uid://y57qje8eqgen" path="res://assets/chess/white_king.png" id="2_24737"]
+[ext_resource type="Texture2D" uid="uid://bxfchep71u5pt" path="res://assets/chess/black_king.png" id="3_6kxgy"]
+[ext_resource type="Texture2D" uid="uid://d1dq2e4xy3583" path="res://assets/Ecu_gris.png" id="3_utng7"]
+[ext_resource type="Texture2D" uid="uid://dc63laq3wjrd8" path="res://assets/chess/white_pizza.png" id="3_wslbq"]
+[ext_resource type="Texture2D" uid="uid://c45jtfg4qx7wt" path="res://assets/chess/black_pizza.png" id="4_1an1x"]
+[ext_resource type="Texture2D" uid="uid://bqjgax7en60yb" path="res://assets/star.png" id="4_24737"]
+[ext_resource type="Texture2D" uid="uid://c3s5fffhvjx2k" path="res://assets/chess/black_knight.png" id="6_6wif4"]
+[ext_resource type="Texture2D" uid="uid://jmtskg520hkl" path="res://assets/chess/white_queen.png" id="6_jk0wg"]
+[ext_resource type="Texture2D" uid="uid://dvqdryfjf2fg0" path="res://assets/chess/black_queen.png" id="7_1an1x"]
+[ext_resource type="Texture2D" uid="uid://twxk4uwbkubu" path="res://assets/chess/white_knight.png" id="7_k7o17"]
+[ext_resource type="Texture2D" uid="uid://drcbuc8pqapuk" path="res://assets/chess/white_bishop.png" id="12_00cjh"]
+[ext_resource type="Texture2D" uid="uid://yad0fhepxuqm" path="res://assets/chess/white_pawn.png" id="12_ccjto"]
+[ext_resource type="Texture2D" uid="uid://cys3ofokiewp6" path="res://assets/chess/black_pawn.png" id="13_3wr2r"]
+[ext_resource type="Texture2D" uid="uid://csr8od1k1m7fv" path="res://assets/chess/black_bishop.png" id="13_ji5s2"]
+[ext_resource type="Texture2D" uid="uid://ctwyiq8sgx8jb" path="res://assets/Capture d’écran 2026-07-18 à 17.06.56.png" id="14_3eitw"]
+[ext_resource type="Texture2D" uid="uid://cxmoyvx4uxu4" path="res://assets/shogi/king.png" id="15_vqd3a"]
+[ext_resource type="Texture2D" uid="uid://castuy7uyjb0l" path="res://assets/Capture d’écran 2026-07-24 à 20.45.01.png" id="16_l3cy2"]
+[ext_resource type="Texture2D" uid="uid://b84b44pweyn7n" path="res://assets/red_dot.png" id="17_7jbba"]
+[ext_resource type="Texture2D" uid="uid://vgbxlclfh7po" path="res://assets/chess/Castle red king.png" id="17_ehgjo"]
+[ext_resource type="Texture2D" uid="uid://wwwyj18cy4ky" path="res://assets/chess/Castle blue king.png" id="18_24737"]
+[ext_resource type="Texture2D" uid="uid://dvp45t12ehgr3" path="res://assets/blue_dot.png" id="18_ttn48"]
+[ext_resource type="Texture2D" uid="uid://dbarvyx1hijas" path="res://assets/chess/black_dot.png" id="21_jdmxl"]
+[ext_resource type="Texture2D" uid="uid://ddfclw5gkkt6i" path="res://assets/chess/white_dot.png" id="22_cqfic"]
+[ext_resource type="FontFile" uid="uid://dd1jhshicw5mf" path="res://assets/font/VarsityTeam-Bold.otf" id="23_cqfic"]
+[ext_resource type="FontFile" uid="uid://hoyeao8xiwbw" path="res://assets/font/Classica-Bold.ttf" id="24_lwkqj"]
+[ext_resource type="FontVariation" uid="uid://kakl4nwm4oh6" path="res://assets/font/new_font_variation.tres" id="27_yp1gd"]
+[ext_resource type="Texture2D" uid="uid://dn5se8ti7eryu" path="res://assets/special_arrow.png" id="28_6kxgy"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_q11ym"]
+texture = ExtResource("2_24737")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_gtb7w"]
+texture = ExtResource("3_6kxgy")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1an1x"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_n52xf"]
+texture = ExtResource("6_6wif4")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_utng7"]
+texture = ExtResource("7_k7o17")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ttn48"]
+texture = ExtResource("15_vqd3a")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_00cjh"]
+texture = ExtResource("15_vqd3a")
+modulate_color = Color(0.78352344, 0.7835234, 0.7835234, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3eitw"]
+texture = ExtResource("12_00cjh")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vqd3a"]
+texture = ExtResource("13_ji5s2")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_pqalx"]
+texture = ExtResource("17_ehgjo")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6p1ky"]
+texture = ExtResource("18_24737")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_yp1gd"]
+texture = ExtResource("13_3wr2r")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_2iv2l"]
+texture = ExtResource("12_ccjto")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_bwt88"]
+texture = ExtResource("21_jdmxl")
+expand_margin_left = 30.0
+expand_margin_right = 30.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_edb4f"]
+texture = ExtResource("22_cqfic")
+expand_margin_left = 30.0
+expand_margin_right = 30.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_l3cy2"]
+texture = ExtResource("14_3eitw")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7jbba"]
+texture = ExtResource("14_3eitw")
+modulate_color = Color(0.7919991, 0.79199916, 0.7919991, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ehgjo"]
+texture = ExtResource("17_7jbba")
+expand_margin_left = 30.0
+expand_margin_right = 30.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_24737"]
+texture = ExtResource("18_ttn48")
+expand_margin_left = 30.0
+expand_margin_right = 30.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6kxgy"]
+texture = ExtResource("17_7jbba")
+expand_margin_left = 30.0
+expand_margin_right = 30.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_h6fu4"]
+texture = ExtResource("3_wslbq")
+expand_margin_left = 20.0
+expand_margin_right = 20.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1an1x"]
+texture = ExtResource("4_1an1x")
+expand_margin_left = 20.0
+expand_margin_right = 20.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ji5s2"]
+texture = ExtResource("6_jk0wg")
+modulate_color = Color(1, 0, 0, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7v8w7"]
+texture = ExtResource("6_jk0wg")
+modulate_color = Color(1, 0.37800747, 0.3099049, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_lwkqj"]
+texture = ExtResource("16_l3cy2")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_haoif"]
+texture = ExtResource("16_l3cy2")
+modulate_color = Color(0.86898494, 0.86898494, 0.8689847, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6wif4"]
+texture = ExtResource("6_jk0wg")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_k7o17"]
+texture = ExtResource("7_1an1x")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qj31w"]
+texture = ExtResource("22_cqfic")
+expand_margin_left = 30.0
+expand_margin_right = 30.0
+modulate_color = Color(0, 0.43529412, 1, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0xere"]
+texture = ExtResource("22_cqfic")
+expand_margin_left = 30.0
+expand_margin_right = 30.0
+modulate_color = Color(0, 0.6745098, 0, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wslbq"]
+texture = ExtResource("2_1g5p4")
+expand_margin_left = 10.0
+expand_margin_top = 10.0
+expand_margin_right = 10.0
+expand_margin_bottom = 10.0
+region_rect = Rect2(0, -50, 350, 449)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3wr2r"]
+texture = ExtResource("3_utng7")
+expand_margin_left = 10.0
+expand_margin_top = 10.0
+expand_margin_right = 10.0
+expand_margin_bottom = 10.0
+region_rect = Rect2(0, -50, 350, 449)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h6fu4"]
+bg_color = Color(0, 0, 0, 0.23529412)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jk0wg"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1g5p4"]
+bg_color = Color(0.39118534, 0.39118537, 0.39118525, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_kja84"]
+texture = ExtResource("28_6kxgy")
+expand_margin_top = 40.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_gyjhv"]
+texture = ExtResource("28_6kxgy")
+expand_margin_top = 40.0
+modulate_color = Color(0.6810102, 0.68101007, 0.68101, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_abghd"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1g5p4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wslbq"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_h6fu4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_i5lmt"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jdmxl"]
+bg_color = Color(0.39215687, 0.39215687, 0.39215687, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jdmxl"]
+
+[node name="menu" type="Node2D" unique_id=1582727451]
+y_sort_enabled = true
+script = ExtResource("1_abghd")
+
+[node name="Control" type="Control" parent="." unique_id=1890356276]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Panel" type="Sprite2D" parent="Control" unique_id=515799105]
+position = Vector2(576, 323.99997)
+scale = Vector2(8, 8)
+
+[node name="UI" type="Node2D" parent="Control" unique_id=492645155]
+
+[node name="VSlider" type="VSlider" parent="Control/UI" unique_id=1115133308]
+anchors_preset = -1
+anchor_right = 0.0069444445
+offset_left = 1074.0
+offset_top = 7.0
+offset_right = 1164.0
+offset_bottom = 639.0
+focus_behavior_recursive = 1
+mouse_default_cursor_shape = 14
+step = 0.2
+value = 100.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Games" type="Node2D" parent="Control/UI" unique_id=436493427]
+
+[node name="GridContainer" type="GridContainer" parent="Control/UI/Games" unique_id=1564316543]
+offset_left = 17.0
+offset_top = 64.0
+offset_right = 1101.0
+offset_bottom = 5054.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+columns = 2
+
+[node name="Chess" type="Button" parent="Control/UI/Games/GridContainer" unique_id=216702494]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+focus_mode = 1
+focus_behavior_recursive = 1
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 64
+theme_override_styles/normal = SubResource("StyleBoxTexture_q11ym")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_gtb7w")
+theme_override_styles/hover = SubResource("StyleBoxTexture_q11ym")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_1an1x")
+text = "Chess"
+icon_alignment = 2
+expand_icon = true
+
+[node name="Drawback chess" type="Button" parent="Control/UI/Games/GridContainer" unique_id=2030190663]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+focus_mode = 1
+focus_behavior_recursive = 1
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 64
+theme_override_styles/normal = SubResource("StyleBoxTexture_n52xf")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_utng7")
+theme_override_styles/hover = SubResource("StyleBoxTexture_n52xf")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_1an1x")
+text = "Drawback Chess"
+icon = ExtResource("4_24737")
+icon_alignment = 2
+expand_icon = true
+
+[node name="Shogi" type="Button" parent="Control/UI/Games/GridContainer" unique_id=888575102]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+focus_mode = 1
+focus_behavior_recursive = 1
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 64
+theme_override_styles/normal = SubResource("StyleBoxTexture_ttn48")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_00cjh")
+theme_override_styles/hover = SubResource("StyleBoxTexture_ttn48")
+text = "Shōgi"
+
+[node name="chess variants" type="Button" parent="Control/UI/Games/GridContainer" unique_id=1660506760]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+focus_mode = 1
+focus_behavior_recursive = 1
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 64
+theme_override_styles/normal = SubResource("StyleBoxTexture_3eitw")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_vqd3a")
+theme_override_styles/hover = SubResource("StyleBoxTexture_3eitw")
+text = " Chess variants"
+icon = ExtResource("4_24737")
+icon_alignment = 2
+expand_icon = true
+
+[node name="Castle War" type="Button" parent="Control/UI/Games/GridContainer" unique_id=107808699]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+focus_mode = 1
+focus_behavior_recursive = 1
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 64
+theme_override_styles/normal = SubResource("StyleBoxTexture_pqalx")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_6p1ky")
+theme_override_styles/hover = SubResource("StyleBoxTexture_pqalx")
+text = "        Catle War "
+icon = ExtResource("4_24737")
+icon_alignment = 2
+expand_icon = true
+
+[node name="Tafl" type="Button" parent="Control/UI/Games/GridContainer" unique_id=595152043]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+focus_mode = 1
+focus_behavior_recursive = 1
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 64
+theme_override_styles/normal = SubResource("StyleBoxTexture_yp1gd")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_2iv2l")
+theme_override_styles/hover = SubResource("StyleBoxTexture_yp1gd")
+text = "      Tafl games "
+icon = ExtResource("4_24737")
+icon_alignment = 2
+expand_icon = true
+
+[node name="Go" type="Button" parent="Control/UI/Games/GridContainer" unique_id=84760174]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+focus_mode = 1
+focus_behavior_recursive = 1
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 64
+theme_override_styles/normal = SubResource("StyleBoxTexture_bwt88")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_edb4f")
+theme_override_styles/hover = SubResource("StyleBoxTexture_bwt88")
+text = "GO"
+
+[node name="Connect 4" type="Button" parent="Control/UI/Games/GridContainer" unique_id=1813383161]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+focus_mode = 1
+focus_behavior_recursive = 1
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 64
+theme_override_styles/normal = SubResource("StyleBoxTexture_l3cy2")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_7jbba")
+theme_override_styles/hover = SubResource("StyleBoxTexture_l3cy2")
+text = "Connect 4"
+
+[node name="Reversi" type="Button" parent="Control/UI/Games/GridContainer" unique_id=540857009]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+focus_mode = 1
+focus_behavior_recursive = 1
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 64
+theme_override_styles/normal = SubResource("StyleBoxTexture_ehgjo")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_24737")
+theme_override_styles/hover = SubResource("StyleBoxTexture_6kxgy")
+text = "            Reversi "
+icon = ExtResource("4_24737")
+icon_alignment = 2
+expand_icon = true
+
+[node name="Pizza Chess" type="Button" parent="Control/UI/Games/GridContainer" unique_id=1752662283]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+focus_mode = 1
+focus_behavior_recursive = 1
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 64
+theme_override_styles/normal = SubResource("StyleBoxTexture_h6fu4")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_1an1x")
+theme_override_styles/hover = SubResource("StyleBoxTexture_h6fu4")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_h6fu4")
+text = "PIZZA CHESS!"
+
+[node name="Amazons" type="Button" parent="Control/UI/Games/GridContainer" unique_id=1378709520]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+focus_mode = 1
+focus_behavior_recursive = 1
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 64
+theme_override_styles/normal = SubResource("StyleBoxTexture_ji5s2")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_7v8w7")
+theme_override_styles/hover = SubResource("StyleBoxTexture_ji5s2")
+text = "Amazons"
+
+[node name="Gomoku" type="Button" parent="Control/UI/Games/GridContainer" unique_id=964058230]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+focus_mode = 1
+focus_behavior_recursive = 1
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 64
+theme_override_styles/normal = SubResource("StyleBoxTexture_lwkqj")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_haoif")
+theme_override_styles/hover = SubResource("StyleBoxTexture_lwkqj")
+text = "Better tic tac toe
+and Gomoku"
+
+[node name="Lines of action" type="Button" parent="Control/UI/Games/GridContainer" unique_id=1080043582]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+focus_mode = 1
+focus_behavior_recursive = 1
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 64
+theme_override_styles/normal = SubResource("StyleBoxTexture_edb4f")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_bwt88")
+theme_override_styles/hover = SubResource("StyleBoxTexture_edb4f")
+text = "Lines of action"
+
+[node name="Pieces fit" type="Button" parent="Control/UI/Games/GridContainer" unique_id=1078186274]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+focus_mode = 1
+focus_behavior_recursive = 1
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 64
+theme_override_styles/normal = SubResource("StyleBoxTexture_6wif4")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_k7o17")
+theme_override_styles/hover = SubResource("StyleBoxTexture_6wif4")
+text = " Pieces fit"
+
+[node name="Gamble" type="Button" parent="Control/UI/Games/GridContainer" unique_id=2139167790]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+focus_mode = 1
+focus_behavior_recursive = 1
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 64
+theme_override_styles/normal = SubResource("StyleBoxTexture_qj31w")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_0xere")
+theme_override_styles/hover = SubResource("StyleBoxTexture_qj31w")
+text = "GAMBLE!"
+
+[node name="Hazelnut" type="Button" parent="Control/UI/Games/GridContainer" unique_id=1977403952]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+focus_mode = 1
+focus_behavior_recursive = 1
+theme_override_colors/font_color = Color(1, 0.75850576, 0.64184934, 1)
+theme_override_colors/font_hover_color = Color(0.9999998, 0.85404086, 0.78681767, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 64
+theme_override_styles/normal = SubResource("StyleBoxTexture_wslbq")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_3wr2r")
+theme_override_styles/hover = SubResource("StyleBoxTexture_wslbq")
+text = "
+HAZELNUT
+      FIGHT !"
+icon_alignment = 2
+vertical_icon_alignment = 0
+
+[node name="victory\'s" type="Label" parent="Control" unique_id=148745955]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 613.0
+offset_right = 1096.0
+offset_bottom = 649.0
+theme_override_fonts/font = ExtResource("23_cqfic")
+theme_override_font_sizes/font_size = 32
+text = "Victory's : P1=0 ; P2=0 ; P3=0 ; P4=0"
+horizontal_alignment = 1
+
+[node name="option" type="Button" parent="Control" unique_id=1311652573]
+layout_mode = 0
+offset_right = 414.0
+offset_bottom = 48.0
+mouse_default_cursor_shape = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_h6fu4")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_h6fu4")
+theme_override_styles/hover = SubResource("StyleBoxFlat_h6fu4")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_jk0wg")
+
+[node name="Label" type="Label" parent="Control" unique_id=58068598]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.004340278
+anchor_top = -0.0046296297
+anchor_right = 0.3532986
+anchor_bottom = 0.04166666
+offset_right = 40.0
+offset_bottom = 23.000004
+focus_behavior_recursive = 1
+theme_override_fonts/font = ExtResource("27_yp1gd")
+theme_override_font_sizes/font_size = 48
+text = "MY BOARD GAMES:"
+metadata/_edit_use_anchors_ = true
+
+[node name="play?" type="Node2D" parent="Control" unique_id=1142958276]
+visible = false
+
+[node name="Panel" type="Panel" parent="Control/play?" unique_id=754988692]
+offset_left = -1.0
+offset_right = 1151.0
+offset_bottom = 648.0
+
+[node name="Panel2" type="Panel" parent="Control/play?" unique_id=1664715196]
+offset_left = 98.0
+offset_top = 60.0
+offset_right = 1006.23126
+offset_bottom = 611.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/panel = SubResource("StyleBoxFlat_1g5p4")
+
+[node name="title" type="Label" parent="Control/play?/Panel2" unique_id=1101097835]
+layout_mode = 0
+offset_left = 10.0
+offset_top = -3.0
+offset_right = 889.0
+offset_bottom = 85.0
+theme_override_font_sizes/font_size = 64
+text = "HAZELNUTS FIGHT !"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Q1" type="HBoxContainer" parent="Control/play?/Panel2" unique_id=803791003]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 140.0
+offset_right = 889.0
+offset_bottom = 265.0
+alignment = 1
+
+[node name="Button" type="Button" parent="Control/play?/Panel2/Q1" unique_id=2051520888]
+layout_mode = 2
+size_flags_horizontal = 3
+focus_mode = 1
+theme_override_font_sizes/font_size = 30
+text = "1"
+
+[node name="Button2" type="Button" parent="Control/play?/Panel2/Q1" unique_id=819244378]
+layout_mode = 2
+size_flags_horizontal = 3
+focus_mode = 1
+theme_override_font_sizes/font_size = 30
+text = "2"
+
+[node name="Button3" type="Button" parent="Control/play?/Panel2/Q1" unique_id=1022592927]
+layout_mode = 2
+size_flags_horizontal = 3
+focus_mode = 1
+theme_override_font_sizes/font_size = 30
+text = "3"
+
+[node name="text" type="LineEdit" parent="Control/play?/Panel2" unique_id=631635550]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 140.0
+offset_right = 776.0
+offset_bottom = 264.0
+theme_override_font_sizes/font_size = 48
+placeholder_text = "Atomic / Duck Chess and more..."
+max_length = 20
+emoji_menu_enabled = false
+
+[node name="Q2" type="HBoxContainer" parent="Control/play?/Panel2" unique_id=1825479477]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 302.0
+offset_right = 889.0
+offset_bottom = 426.0
+alignment = 1
+
+[node name="Button" type="Button" parent="Control/play?/Panel2/Q2" unique_id=2038845174]
+layout_mode = 2
+size_flags_horizontal = 3
+focus_mode = 1
+theme_override_font_sizes/font_size = 30
+text = "1"
+
+[node name="Button2" type="Button" parent="Control/play?/Panel2/Q2" unique_id=1020368240]
+layout_mode = 2
+size_flags_horizontal = 3
+focus_mode = 1
+theme_override_font_sizes/font_size = 30
+text = "2"
+autowrap_trim_flags = 192
+
+[node name="Button3" type="Button" parent="Control/play?/Panel2/Q2" unique_id=1443792443]
+layout_mode = 2
+size_flags_horizontal = 3
+focus_mode = 1
+theme_override_font_sizes/font_size = 30
+text = "3"
+autowrap_trim_flags = 64
+
+[node name="Play!" type="Button" parent="Control/play?/Panel2" unique_id=444239872]
+layout_mode = 0
+offset_left = 305.0
+offset_top = 436.0
+offset_right = 596.0
+offset_bottom = 532.0
+focus_mode = 1
+theme_override_font_sizes/font_size = 64
+text = "PLAY!"
+
+[node name="Qlabel1" type="Label" parent="Control/play?/Panel2" unique_id=681774949]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 107.0
+offset_right = 889.0
+offset_bottom = 152.0
+theme_override_font_sizes/font_size = 32
+text = "QUESTION 1:"
+horizontal_alignment = 1
+
+[node name="Qlabel2" type="Label" parent="Control/play?/Panel2" unique_id=981630174]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 272.0
+offset_right = 889.0
+offset_bottom = 317.0
+theme_override_font_sizes/font_size = 32
+text = "QUESTION 1:"
+horizontal_alignment = 1
+
+[node name="Credits" type="Label" parent="Control/play?/Panel2" unique_id=1547442599]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 63.0
+offset_right = 896.0
+offset_bottom = 108.0
+theme_override_font_sizes/font_size = 32
+text = "Made by: ME"
+horizontal_alignment = 1
+
+[node name="Games" type="Button" parent="Control/play?/Panel2" unique_id=1765144568]
+visible = false
+layout_mode = 0
+offset_left = 782.0
+offset_top = 150.0
+offset_right = 882.0
+offset_bottom = 255.0
+theme_override_font_sizes/font_size = 64
+text = "?"
+
+[node name="?" type="Button" parent="Control/play?/Panel2" unique_id=1113503521]
+layout_mode = 0
+offset_left = 811.0
+offset_top = 16.0
+offset_right = 891.0
+offset_bottom = 96.0
+theme_override_fonts/font = ExtResource("24_lwkqj")
+theme_override_font_sizes/font_size = 48
+text = "?"
+
+[node name="Time_text" type="Label" parent="Control/play?/Panel2" unique_id=1968664826]
+layout_mode = 0
+offset_left = 625.0
+offset_top = 436.0
+offset_right = 867.0
+offset_bottom = 498.0
+theme_override_fonts/font = ExtResource("24_lwkqj")
+theme_override_font_sizes/font_size = 30
+text = "estimated time:"
+horizontal_alignment = 1
+
+[node name="Time" type="Label" parent="Control/play?/Panel2" unique_id=1746812102]
+layout_mode = 0
+offset_left = 628.0
+offset_top = 463.0
+offset_right = 864.0
+offset_bottom = 525.0
+theme_override_fonts/font = ExtResource("24_lwkqj")
+theme_override_font_sizes/font_size = 50
+text = "≈3.5h"
+horizontal_alignment = 1
+
+[node name="star" type="Sprite2D" parent="Control/play?/Panel2" unique_id=2065547244]
+position = Vector2(220.99997, 479)
+scale = Vector2(0.63125, 0.63125)
+texture = ExtResource("4_24737")
+
+[node name="up" type="Button" parent="Control/play?/Panel2" unique_id=1804341174]
+layout_mode = 0
+offset_left = 62.0
+offset_top = 428.0
+offset_right = 142.0
+offset_bottom = 488.0
+scale = Vector2(0.9, 0.9)
+theme_override_styles/normal = SubResource("StyleBoxTexture_kja84")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_gyjhv")
+theme_override_styles/hover = SubResource("StyleBoxTexture_kja84")
+
+[node name="down" type="Button" parent="Control/play?/Panel2" unique_id=343900332]
+layout_mode = 0
+offset_left = 134.0
+offset_top = 541.0
+offset_right = 214.0
+offset_bottom = 601.0
+rotation = 3.1415927
+scale = Vector2(0.9, 0.9)
+theme_override_styles/normal = SubResource("StyleBoxTexture_kja84")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_gyjhv")
+theme_override_styles/hover = SubResource("StyleBoxTexture_kja84")
+
+[node name="quit" type="Button" parent="Control/play?" unique_id=1545413961]
+modulate = Color(1, 0, 0, 1)
+offset_left = 116.0
+offset_top = 17.0
+offset_right = 182.0
+offset_bottom = 182.0
+theme_override_fonts/font = ExtResource("24_lwkqj")
+theme_override_font_sizes/font_size = 120
+theme_override_styles/normal = SubResource("StyleBoxEmpty_abghd")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_1g5p4")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_wslbq")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_h6fu4")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_i5lmt")
+text = "x"
+
+[node name="Possibility" type="Panel" parent="Control/play?" unique_id=2075067161]
+visible = false
+z_index = 1
+offset_left = 98.0
+offset_top = 60.0
+offset_right = 1007.0
+offset_bottom = 611.0
+
+[node name="Panel" type="Panel" parent="Control/play?/Possibility" unique_id=1195842181]
+layout_mode = 0
+offset_left = 89.0
+offset_top = 49.0
+offset_right = 788.0
+offset_bottom = 479.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_1g5p4")
+
+[node name="Games" type="Label" parent="Control/play?/Possibility/Panel" unique_id=512216863]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 65.0
+offset_right = 688.0
+offset_bottom = 423.0
+theme_override_font_sizes/font_size = 32
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="Details" type="Label" parent="Control/play?/Possibility/Panel" unique_id=1711968907]
+layout_mode = 0
+offset_left = 17.0
+offset_top = 65.0
+offset_right = 673.0
+offset_bottom = 388.0
+theme_override_font_sizes/font_size = 32
+horizontal_alignment = 3
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="quit" type="Button" parent="Control/play?/Possibility/Panel" unique_id=1539320410]
+modulate = Color(1, 0, 0, 1)
+layout_mode = 0
+offset_left = 6.0
+offset_top = -53.0
+offset_right = 72.0
+offset_bottom = 112.0
+theme_override_fonts/font = ExtResource("24_lwkqj")
+theme_override_font_sizes/font_size = 96
+theme_override_styles/normal = SubResource("StyleBoxEmpty_abghd")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_1g5p4")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_wslbq")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_h6fu4")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_i5lmt")
+text = "x"
+
+[node name="options" type="Node2D" parent="Control" unique_id=864307046]
+visible = false
+z_index = 1
+
+[node name="Panel" type="Panel" parent="Control/options" unique_id=1622661294]
+offset_right = 1152.0
+offset_bottom = 648.0
+
+[node name="Panel2" type="Panel" parent="Control/options" unique_id=278414638]
+offset_left = 61.0
+offset_top = 75.0
+offset_right = 1076.0
+offset_bottom = 568.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/panel = SubResource("StyleBoxFlat_1g5p4")
+
+[node name="title" type="Label" parent="Control/options/Panel2" unique_id=1704388014]
+layout_mode = 0
+offset_left = 75.0
+offset_top = -2.0
+offset_right = 1004.0
+offset_bottom = 86.0
+theme_override_font_sizes/font_size = 64
+text = "OPTIONS:"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Q1" type="HBoxContainer" parent="Control/options/Panel2" unique_id=2054271038]
+layout_mode = 0
+offset_left = 320.0
+offset_top = 77.0
+offset_right = 990.0
+offset_bottom = 205.0
+alignment = 1
+
+[node name="No Bots" type="Button" parent="Control/options/Panel2/Q1" unique_id=1342404032]
+modulate = Color(0, 1, 0, 1)
+layout_mode = 2
+size_flags_horizontal = 3
+focus_mode = 1
+theme_override_font_sizes/font_size = 30
+text = "OFF"
+
+[node name="Normal Bot" type="Button" parent="Control/options/Panel2/Q1" unique_id=1729425284]
+layout_mode = 2
+size_flags_horizontal = 3
+focus_mode = 1
+theme_override_font_sizes/font_size = 30
+text = "Normal"
+
+[node name="Hard Bot" type="Button" parent="Control/options/Panel2/Q1" unique_id=1478052208]
+layout_mode = 2
+size_flags_horizontal = 3
+focus_mode = 1
+theme_override_font_sizes/font_size = 30
+text = "HAARD !!!"
+
+[node name="Q2" type="HBoxContainer" parent="Control/options/Panel2" unique_id=1034556411]
+layout_mode = 0
+offset_left = 320.0
+offset_top = 209.0
+offset_right = 990.0
+offset_bottom = 337.0
+alignment = 1
+
+[node name="1 Bot" type="Button" parent="Control/options/Panel2/Q2" unique_id=1666976904]
+layout_mode = 2
+size_flags_horizontal = 3
+focus_mode = 1
+theme_override_font_sizes/font_size = 30
+text = "1 / white"
+
+[node name="2 Bots" type="Button" parent="Control/options/Panel2/Q2" unique_id=20635449]
+layout_mode = 2
+size_flags_horizontal = 3
+focus_mode = 1
+theme_override_font_sizes/font_size = 30
+text = "2 / black"
+autowrap_trim_flags = 192
+
+[node name="3 Bots" type="Button" parent="Control/options/Panel2/Q2" unique_id=1424684455]
+layout_mode = 2
+size_flags_horizontal = 3
+focus_mode = 1
+theme_override_font_sizes/font_size = 30
+text = "3 / both"
+autowrap_trim_flags = 64
+
+[node name="boxes_label" type="Label" parent="Control/options/Panel2" unique_id=713319670]
+layout_mode = 0
+offset_left = 190.0
+offset_top = 381.0
+offset_right = 469.0
+offset_bottom = 448.0
+theme_override_font_sizes/font_size = 40
+text = "Boxes/Arrows:"
+
+[node name="boxes" type="ColorPickerButton" parent="Control/options/Panel2" unique_id=1149053214]
+layout_mode = 0
+offset_left = 476.0
+offset_top = 362.0
+offset_right = 576.0
+offset_bottom = 462.0
+color = Color(1, 0.33333334, 0.6313726, 1)
+edit_alpha = false
+edit_intensity = false
+
+[node name="background_label" type="Label" parent="Control/options/Panel2" unique_id=966336585]
+layout_mode = 0
+offset_left = 631.0
+offset_top = 366.0
+offset_right = 923.0
+offset_bottom = 433.0
+theme_override_font_sizes/font_size = 48
+text = "Background:"
+
+[node name="Theme" type="LineEdit" parent="Control/options/Panel2" unique_id=1985515826]
+layout_mode = 0
+offset_left = 625.0
+offset_top = 411.0
+offset_right = 910.0
+offset_bottom = 464.0
+theme_override_fonts/font = ExtResource("24_lwkqj")
+theme_override_font_sizes/font_size = 30
+placeholder_text = "Texture Name"
+alignment = 1
+max_length = 9
+
+[node name="Themes" type="Button" parent="Control/options/Panel2" unique_id=1048981006]
+layout_mode = 0
+offset_left = 923.0
+offset_top = 383.0
+offset_right = 993.0
+offset_bottom = 453.0
+theme_override_fonts/font = ExtResource("24_lwkqj")
+theme_override_font_sizes/font_size = 44
+text = "?"
+
+[node name="quit" type="Button" parent="Control/options" unique_id=2114681426]
+modulate = Color(1, 0, 0, 1)
+offset_left = 72.0
+offset_top = 24.0
+offset_right = 138.0
+offset_bottom = 189.0
+theme_override_fonts/font = ExtResource("24_lwkqj")
+theme_override_font_sizes/font_size = 110
+theme_override_styles/normal = SubResource("StyleBoxEmpty_abghd")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_1g5p4")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_wslbq")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_h6fu4")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_i5lmt")
+text = "x"
+
+[node name="Themes" type="Panel" parent="Control/options" unique_id=1957542079]
+visible = false
+z_index = 3
+offset_left = 1.0
+offset_right = 1152.0
+offset_bottom = 647.0
+
+[node name="Panel" type="Panel" parent="Control/options/Themes" unique_id=1391829975]
+layout_mode = 0
+offset_left = 303.0
+offset_top = 145.0
+offset_right = 854.0
+offset_bottom = 532.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_jdmxl")
+
+[node name="Quit Themes" type="Button" parent="Control/options/Themes/Panel" unique_id=1190710655]
+modulate = Color(1, 0, 0, 1)
+layout_mode = 0
+offset_left = -1.0
+offset_top = -5.0
+offset_right = 82.0
+offset_bottom = 85.0
+theme_override_fonts/font = ExtResource("24_lwkqj")
+theme_override_font_sizes/font_size = 64
+theme_override_styles/normal = SubResource("StyleBoxEmpty_jdmxl")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_jdmxl")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_jdmxl")
+text = "X"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Control/options/Themes/Panel" unique_id=2054119320]
+layout_mode = 0
+offset_left = 62.0
+offset_top = 27.0
+offset_right = 539.0
+offset_bottom = 365.0
+focus_mode = 2
+theme_override_font_sizes/normal_font_size = 32
+theme_override_font_sizes/bold_font_size = 32
+theme_override_font_sizes/bold_italics_font_size = 32
+theme_override_font_sizes/italics_font_size = 32
+theme_override_font_sizes/mono_font_size = 32
+fit_content = true
+horizontal_alignment = 1
+vertical_alignment = 1
+selection_enabled = true
+
+[node name="Label" type="Label" parent="Control/options" unique_id=1253955813]
+offset_left = 80.0
+offset_top = 186.0
+offset_right = 323.0
+offset_bottom = 513.0
+theme_override_font_sizes/font_size = 45
+text = "Bot in games:
+
+Bots number:
+
+
+colors:"
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1293300604]
+position = Vector2(576, 324)
+
+[connection signal="value_changed" from="Control/UI/VSlider" to="." method="_on_v_slider_value_changed"]
+[connection signal="pressed" from="Control/UI/Games/GridContainer/Chess" to="." method="_on_game_4_pressed"]
+[connection signal="pressed" from="Control/UI/Games/GridContainer/Drawback chess" to="." method="_on_game_5_pressed"]
+[connection signal="pressed" from="Control/UI/Games/GridContainer/Shogi" to="." method="_on_game_9_pressed"]
+[connection signal="pressed" from="Control/UI/Games/GridContainer/chess variants" to="." method="_on_game_7_pressed"]
+[connection signal="pressed" from="Control/UI/Games/GridContainer/Castle War" to="." method="_on_game_11_pressed"]
+[connection signal="pressed" from="Control/UI/Games/GridContainer/Tafl" to="." method="_on_game_14_pressed"]
+[connection signal="pressed" from="Control/UI/Games/GridContainer/Go" to="." method="_on_game_15_pressed"]
+[connection signal="pressed" from="Control/UI/Games/GridContainer/Connect 4" to="." method="_on_game_8_pressed"]
+[connection signal="pressed" from="Control/UI/Games/GridContainer/Reversi" to="." method="_on_game_13_pressed"]
+[connection signal="pressed" from="Control/UI/Games/GridContainer/Pizza Chess" to="." method="_on_game_2_pressed"]
+[connection signal="pressed" from="Control/UI/Games/GridContainer/Amazons" to="." method="_on_game_10_pressed"]
+[connection signal="pressed" from="Control/UI/Games/GridContainer/Gomoku" to="." method="_on_game_12_pressed"]
+[connection signal="pressed" from="Control/UI/Games/GridContainer/Lines of action" to="." method="_on_game_16_pressed"]
+[connection signal="pressed" from="Control/UI/Games/GridContainer/Pieces fit" to="." method="_on_game_6_pressed"]
+[connection signal="pressed" from="Control/UI/Games/GridContainer/Gamble" to="." method="_on_game_3_pressed"]
+[connection signal="pressed" from="Control/UI/Games/GridContainer/Hazelnut" to="." method="_on_game_1_pressed"]
+[connection signal="pressed" from="Control/option" to="." method="_on_option_pressed"]
+[connection signal="pressed" from="Control/play?/Panel2/Q1/Button" to="." method="_on_Q1_1_pressed"]
+[connection signal="pressed" from="Control/play?/Panel2/Q1/Button2" to="." method="_on_Q1_2_pressed"]
+[connection signal="pressed" from="Control/play?/Panel2/Q1/Button3" to="." method="_on_Q1_3_pressed"]
+[connection signal="editing_toggled" from="Control/play?/Panel2/text" to="." method="_on_text_editing_toggled"]
+[connection signal="text_submitted" from="Control/play?/Panel2/text" to="." method="_on_text_text_submitted"]
+[connection signal="pressed" from="Control/play?/Panel2/Q2/Button" to="." method="_on_Q2_1_pressed"]
+[connection signal="pressed" from="Control/play?/Panel2/Q2/Button2" to="." method="_on_Q2_2_pressed"]
+[connection signal="pressed" from="Control/play?/Panel2/Q2/Button3" to="." method="_on_Q2_3_pressed"]
+[connection signal="pressed" from="Control/play?/Panel2/Play!" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="Control/play?/Panel2/Games" to="." method="_on__pressed"]
+[connection signal="pressed" from="Control/play?/Panel2/?" to="." method="_on_details_pressed"]
+[connection signal="pressed" from="Control/play?/Panel2/up" to="." method="_on_up_pressed"]
+[connection signal="pressed" from="Control/play?/Panel2/down" to="." method="_on_down_pressed"]
+[connection signal="pressed" from="Control/play?/quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="Control/play?/Possibility/Panel/quit" to="." method="_on_quit__pressed"]
+[connection signal="pressed" from="Control/options/Panel2/Q1/No Bots" to="." method="_on_no_bots_pressed"]
+[connection signal="pressed" from="Control/options/Panel2/Q1/Normal Bot" to="." method="_on_normal_bot_pressed"]
+[connection signal="pressed" from="Control/options/Panel2/Q1/Hard Bot" to="." method="_on_hard_bot_pressed"]
+[connection signal="pressed" from="Control/options/Panel2/Q2/1 Bot" to="." method="_on_1_bot_pressed"]
+[connection signal="pressed" from="Control/options/Panel2/Q2/2 Bots" to="." method="_on_2_bots_pressed"]
+[connection signal="pressed" from="Control/options/Panel2/Q2/3 Bots" to="." method="_on_3_bots_pressed"]
+[connection signal="color_changed" from="Control/options/Panel2/boxes" to="." method="_on_boxes_color_changed"]
+[connection signal="editing_toggled" from="Control/options/Panel2/Theme" to="." method="_on_theme_editing_toggled"]
+[connection signal="text_submitted" from="Control/options/Panel2/Theme" to="." method="_on_theme_text_submitted"]
+[connection signal="pressed" from="Control/options/Panel2/Themes" to="." method="_on_themes_pressed"]
+[connection signal="pressed" from="Control/options/quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="Control/options/Themes/Panel/Quit Themes" to="." method="_on_quit_themes_pressed"]
