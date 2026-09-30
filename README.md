@@ -3,6 +3,8 @@
 my-board-games is a game that contain all of the games that I like or invented.
 It contains a lot of cool background.
 
+https://nezruceuil.itch.io/cool-board-games
+
 
 ### Controls:
 - Space to scroll down.
