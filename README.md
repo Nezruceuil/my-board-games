@@ -6,22 +6,23 @@ It contains a lot of cool background.
 https://nezruceuil.itch.io/cool-board-games
 
 
-### Controls:
+### Controls 🔡:
 - Space to scroll down.
 - Shift Space to scroll up
 - Control/Option Space to only see the background
 
-### Info:
+### Info ℹ️:
 - The Bots only work with Chess and Castle War.
 - Your progress is Saved!
+- The Bots are the Only thing in this project that is coded by AI.
 
-#### Castle War rules:
+#### Castle War rules 🏰:
 
 Castle War is a strategic game played on a 9 by 9 grid.
 
 The objective of the Game is to eat the enemy king.
 
-#### Pieces:
+#### Pieces ♘:
 
 The Wall: The Wall cannot be moved, but pieces of the same team can jump over it (except for the paysan). It can only be eaten by a king, a paysan or a soldier.
 
