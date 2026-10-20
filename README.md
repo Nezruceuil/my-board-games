@@ -15,6 +15,7 @@ game link: https://nezruceuil.itch.io/cool-board-games
 - The Bots only work with Chess and Castle War. ⚙️
 - Your progress is Saved! ✅
 - The Bots are the Only thing in this project that is coded by AI. 🤖
+- To get to the controls you need to press the title (My Board game) [up-left]
 
 #### Castle War rules 🏰:
 
